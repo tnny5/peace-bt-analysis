@@ -137,6 +137,7 @@ PARAM_LABELS = {
     'EMA_Type':             'EMA_Type',
     'EMA_reverse':          'EMA_reverse',
     'EMA_period':           'EMA_period',
+    'Lots':                 '初期Lot',
     'NanpinEntryPips':      'NanpinPips',
     'Nanpin_interbal_hour': 'Nanpin_hour',
     'NanpinLotsMult':       'LotsMult',
@@ -163,6 +164,7 @@ def meta_table(d):
         diff = k in majority and str(v) != majority[k]
         td   = ' style="background:#FFF3CD;color:#7B4D00"' if diff else ''
         rows += f"<tr><td>{label}</td><td{td}>{v}</td></tr>"
+    rows += f"<tr><td>時間足</td><td>M5</td></tr>"
     rows += f"<tr><td>総グループ</td><td>{s['groups_normal']}</td></tr>"
     nc_dist = s.get('nc_distribution', {})
     nc_str  = '  '.join(f"NC{k}:{v}" for k,v in nc_dist.items())
@@ -196,10 +198,8 @@ canvases_html = f"""
 <div class="charts-labels">
   {chart_labels_html}
 </div>
-<div class="charts-scroll" id="nc-scroll">
-  <div class="charts-inner-wrap">
-    {chart_canvases_html}
-  </div>
+<div class="charts-inner-wrap">
+  {chart_canvases_html}
 </div>"""
 
 # ── 5. 最終HTML ─────────────────────────────────────────
@@ -235,8 +235,7 @@ h2{{font-size:13px;font-weight:500;color:#888;text-transform:uppercase;letter-sp
 .chart-label{{font-size:13px;font-weight:500;color:#444;margin-bottom:4px}}
 .chart-sub{{font-size:11px;font-weight:400;color:#999;margin-left:8px}}
 .charts-labels{{margin-bottom:6px}}
-.charts-scroll{{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;border-top:0.5px solid #e8e6e0}}
-.charts-inner-wrap{{display:flex;flex-direction:column}}
+.charts-inner-wrap{{display:flex;flex-direction:column;border-top:0.5px solid #e8e6e0}}
 .chart-inner{{position:relative;height:150px;margin-top:4px}}
 footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px solid #e8e6e0}}
 </style>
@@ -299,8 +298,6 @@ const NC_LABELS = {{1:'NC=1',2:'NC=2',3:'NC=3',4:'NC=4+'}};
 const PAIRS = Object.keys(RAW);
 const weeks = Object.keys(RAW[PAIRS[0]]);
 
-const PX_PER_WEEK = 16;
-const CANVAS_W = weeks.length * PX_PER_WEEK;
 
 const shortLabels = weeks.map(w => {{
   const [y, mo, d] = w.split('-');
@@ -362,10 +359,6 @@ function rebuild() {{
   PAIRS.forEach((pair, idx) => {{
     const el = document.getElementById('c'+(idx+1));
     if (!el) return;
-    el.width  = CANVAS_W;
-    el.height = 150;
-    const inner = el.parentElement;
-    if (inner) inner.style.width = CANVAS_W + 'px';
     const d = RAW[pair];
     const datasets = [1,2,3,4].filter(nc => show[nc]).map(nc => ({{
       label: NC_LABELS[nc],
@@ -379,7 +372,7 @@ function rebuild() {{
       data: {{labels: shortLabels, datasets}},
       plugins: [vertLinesPlugin],
       options: {{
-        responsive: false,
+        responsive: true,
         maintainAspectRatio: false,
         plugins: {{
           legend: {{display: false}},
@@ -411,7 +404,6 @@ function rebuild() {{
   }});
 }}
 
-document.querySelector('.charts-inner-wrap').style.width = CANVAS_W + 'px';
 rebuild();
 
 // ── 含み損グラフ（3ペア積み上げ棒グラフ）────────────────
