@@ -41,7 +41,13 @@ def get_monday(date_str):
     return (d - timedelta(days=d.weekday())).isoformat()
 
 def weekly_nc(groups):
-    """各週にオープン中だったグループ件数をNC別に集計（案A: リスク在中期間ベース）"""
+    """各週にオープン中だったポジション数をナンピン段数別に集計（案A: リスク在中期間ベース）
+
+    Y軸はグループ件数ではなくポジション数（オーダー数）。
+    nc=N のグループは N ポジションを保有中として加算。
+    表示ラベルはマニュアル準拠（NCはナンピン回数で0始まり、nc=N → マニュアルNC=N-1）。
+    バケット: nc=1→bucket1(NC=0), nc=2→bucket2(NC=1), nc=3→bucket3(NC=2), nc>=4→bucket4(NC=3+)
+    """
     from datetime import date, timedelta
 
     opens  = [date.fromisoformat(g['open_dt'][:10]) for g in groups]
@@ -49,7 +55,6 @@ def weekly_nc(groups):
     if not opens:
         return {}
 
-    # 全期間の月曜日リストを生成
     period_start = min(opens) - timedelta(days=min(opens).weekday())
     period_end   = max(closes) if closes else max(opens)
     all_weeks = {}
@@ -61,13 +66,13 @@ def weekly_nc(groups):
     for g in groups:
         open_d  = date.fromisoformat(g['open_dt'][:10])
         close_d = date.fromisoformat(g['close_dt'][:10]) if g['close_dt'] else period_end
-        nc_key  = min(g['nc'], 4)
-        # open週の月曜日からclose週まで、各週に1カウント加算
+        nc      = g['nc']
+        nc_key  = min(nc, 4)
         mon = open_d - timedelta(days=open_d.weekday())
         while mon <= close_d:
             key = mon.isoformat()
             if key in all_weeks:
-                all_weeks[key][nc_key] += 1
+                all_weeks[key][nc_key] += nc  # グループ件数ではなくポジション数を加算
             mon += timedelta(days=7)
 
     return dict(sorted(all_weeks.items()))
@@ -258,19 +263,19 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
   <h2>週次オープン中ポジション数（リスク在中ベース）</h2>
   <div class="toolbar">
     <span>表示:</span>
-    <label><input type="checkbox" id="showNC1" checked> NC=1</label>
-    <label><input type="checkbox" id="showNC2" checked> NC=2</label>
-    <label><input type="checkbox" id="showNC3" checked> NC=3</label>
-    <label><input type="checkbox" id="showNC4" checked> NC=4+</label>
+    <label><input type="checkbox" id="showNC1" checked> NC=0</label>
+    <label><input type="checkbox" id="showNC2" checked> NC=1</label>
+    <label><input type="checkbox" id="showNC3" checked> NC=2</label>
+    <label><input type="checkbox" id="showNC4" checked> NC=3+</label>
     <div class="sep"></div>
     <label><input type="checkbox" id="unifyY"> Y軸を統一</label>
-    <span class="y-note">Y軸 = その週に保有中だったグループ件数（色はそのグループの最終NC段数）</span>
+    <span class="y-note">Y軸 = その週に保有中だったポジション数（色はそのグループのナンピン段数、NC=ナンピン回数で0始まり）</span>
   </div>
   <div class="legend">
-    <span><b style="background:#639922"></b>NC=1（ナンピンなし）</span>
-    <span><b style="background:#BA7517"></b>NC=2</span>
-    <span><b style="background:#D85A30"></b>NC=3</span>
-    <span><b style="background:#A32D2D"></b>NC=4+</span>
+    <span><b style="background:#5A9E22"></b>NC=0（ナンピンなし）</span>
+    <span><b style="background:#D4A017"></b>NC=1</span>
+    <span><b style="background:#D85A30"></b>NC=2</span>
+    <span><b style="background:#A32D2D"></b>NC=3+</span>
   </div>
   {canvases_html}
 </section>
@@ -293,8 +298,8 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 const RAW = {chart_json};
-const COLORS = {{1:'#639922',2:'#BA7517',3:'#D85A30',4:'#A32D2D'}};
-const NC_LABELS = {{1:'NC=1',2:'NC=2',3:'NC=3',4:'NC=4+'}};
+const COLORS = {{1:'#5A9E22',2:'#D4A017',3:'#D85A30',4:'#A32D2D'}};
+const NC_LABELS = {{1:'NC=0',2:'NC=1',3:'NC=2',4:'NC=3+'}};
 const PAIRS = Object.keys(RAW);
 const weeks = Object.keys(RAW[PAIRS[0]]);
 
@@ -379,7 +384,7 @@ function rebuild() {{
           tooltip: {{
             callbacks: {{
               title: items => weeks[items[0].dataIndex] + ' 週（保有中）',
-              label: item => item.dataset.label + ': ' + item.raw + '件',
+              label: item => item.dataset.label + ': ' + item.raw + 'ポジション',
             }}
           }}
         }},
