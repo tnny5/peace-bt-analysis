@@ -92,19 +92,27 @@ def meta_table(d):
 meta_html = "\n".join(meta_table(d) for d in all_data)
 
 # ── 4. チャートキャンバスHTML ───────────────────────────
-canvases_html = ""
+chart_labels_html = ""
+chart_canvases_html = ""
 for i, d in enumerate(all_data, 1):
     m    = d['meta']
     pair = m['bt_name'].split('-')[2] if '-' in m['bt_name'] else m['bt_name']
-    canvases_html += f"""
-<div class="chart-block">
-  <div class="chart-label">{pair}
-    <span class="chart-sub">{m.get('source','')} — Pips={m.get('NanpinEntryPips','?')} / Mult={m.get('NanpinLotsMult','?')} / TP={m.get('TP_pips','?')}pips</span>
-  </div>
-  <div class="chart-scroll">
-    <div class="chart-inner">
-      <canvas id="c{i}" role="img" aria-label="{pair} NC分布"></canvas>
-    </div>
+    chart_labels_html += f"""
+<div class="chart-label">{pair}
+  <span class="chart-sub">{m.get('source','')} — Pips={m.get('NanpinEntryPips','?')} / Mult={m.get('NanpinLotsMult','?')} / TP={m.get('TP_pips','?')}pips</span>
+</div>"""
+    chart_canvases_html += f"""
+<div class="chart-inner">
+  <canvas id="c{i}" role="img" aria-label="{pair} NC分布"></canvas>
+</div>"""
+
+canvases_html = f"""
+<div class="charts-labels">
+  {chart_labels_html}
+</div>
+<div class="charts-scroll">
+  <div class="charts-inner-wrap">
+    {chart_canvases_html}
   </div>
 </div>"""
 
@@ -138,11 +146,12 @@ h2{{font-size:13px;font-weight:500;color:#888;text-transform:uppercase;letter-sp
 .legend{{display:flex;gap:16px;margin-bottom:10px;font-size:12px;color:#666;flex-wrap:wrap}}
 .legend span{{display:flex;align-items:center;gap:4px}}
 .legend b{{display:inline-block;width:10px;height:10px;border-radius:2px}}
-.chart-block{{margin-bottom:20px}}
 .chart-label{{font-size:13px;font-weight:500;color:#444;margin-bottom:4px}}
 .chart-sub{{font-size:11px;font-weight:400;color:#999;margin-left:8px}}
-.chart-scroll{{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch}}
-.chart-inner{{position:relative;height:150px}}
+.charts-labels{{margin-bottom:6px}}
+.charts-scroll{{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;border-top:0.5px solid #e8e6e0}}
+.charts-inner-wrap{{display:flex;flex-direction:column}}
+.chart-inner{{position:relative;height:150px;margin-top:4px}}
 footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px solid #e8e6e0}}
 </style>
 </head>
@@ -192,7 +201,7 @@ const NC_LABELS = {{1:'NC=1',2:'NC=2',3:'NC=3',4:'NC=4+'}};
 const PAIRS = Object.keys(RAW);
 const weeks = Object.keys(RAW[PAIRS[0]]);
 
-const PX_PER_WEEK = 11;
+const PX_PER_WEEK = 16;
 const CANVAS_W = weeks.length * PX_PER_WEEK;
 
 const shortLabels = weeks.map(w => {{
@@ -253,7 +262,7 @@ function rebuild() {{
   const yMax  = unify ? calcYMax(show) : undefined;
 
   PAIRS.forEach((pair, idx) => {{
-    const inner = document.querySelector('#c'+(idx+1))?.parentElement;
+    const inner = document.getElementById('c'+(idx+1))?.parentElement;
     if (inner) inner.style.width = CANVAS_W + 'px';
     const el = document.getElementById('c'+(idx+1));
     if (!el) return;
@@ -302,7 +311,7 @@ function rebuild() {{
   }});
 }}
 
-document.querySelectorAll('.chart-inner').forEach(el => {{
+document.querySelectorAll('.chart-inner, .charts-inner-wrap').forEach(el => {{
   el.style.width = CANVAS_W + 'px';
 }});
 rebuild();
