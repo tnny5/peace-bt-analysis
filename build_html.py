@@ -262,10 +262,12 @@ function rebuild() {{
   const yMax  = unify ? calcYMax(show) : undefined;
 
   PAIRS.forEach((pair, idx) => {{
-    const inner = document.getElementById('c'+(idx+1))?.parentElement;
-    if (inner) inner.style.width = CANVAS_W + 'px';
     const el = document.getElementById('c'+(idx+1));
     if (!el) return;
+    el.width  = CANVAS_W;
+    el.height = 150;
+    const inner = el.parentElement;
+    if (inner) inner.style.width = CANVAS_W + 'px';
     const d = RAW[pair];
     const datasets = [1,2,3,4].filter(nc => show[nc]).map(nc => ({{
       label: NC_LABELS[nc],
@@ -311,9 +313,7 @@ function rebuild() {{
   }});
 }}
 
-document.querySelectorAll('.chart-inner, .charts-inner-wrap').forEach(el => {{
-  el.style.width = CANVAS_W + 'px';
-}});
+document.querySelector('.charts-inner-wrap').style.width = CANVAS_W + 'px';
 rebuild();
 
 ['showNC1','showNC2','showNC3','showNC4','unifyY'].forEach(id => {{
