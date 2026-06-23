@@ -1,0 +1,7602 @@
+{
+  "meta": {
+    "bt_name": "BT-OFF-EURGBP-2023-2025",
+    "source": "公式設定",
+    "account": "A",
+    "EMA_Type": "16388(H4)",
+    "EMA_reverse": true,
+    "EMA_period": 100,
+    "NanpinEntryPips": 55,
+    "Nanpin_interbal_hour": 5,
+    "NanpinLotsMult": 1.7,
+    "NanpinCount": 10,
+    "TP_pips": 10.0,
+    "TP_yen": 1000.0,
+    "Entry_Type": 2,
+    "Position_Type": 1,
+    "Lots": 0.01,
+    "generated_at": "2026-06-23 00:17"
+  },
+  "stats": {
+    "total_deals": 978,
+    "in": 489,
+    "out": 489,
+    "groups_normal": 421,
+    "groups_anomaly": 0,
+    "nc_distribution": {
+      "1": 375,
+      "2": 32,
+      "3": 8,
+      "4": 4,
+      "5": 2
+    }
+  },
+  "normal": [
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-03 02:10",
+      "close_dt": "2023-01-03 04:07",
+      "duration_h": 1.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-03 02:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88535
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-03 10:15",
+      "close_dt": "2023-01-03 10:24",
+      "duration_h": 0.15,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-03 10:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88526
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-03 10:55",
+      "close_dt": "2023-01-03 11:33",
+      "duration_h": 0.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-03 10:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88491
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-03 11:55",
+      "close_dt": "2023-01-03 13:10",
+      "duration_h": 1.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-03 11:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88484
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-03 18:20",
+      "close_dt": "2023-01-04 12:35",
+      "duration_h": 18.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-03 18:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88017
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-04 13:00",
+      "close_dt": "2023-01-04 13:13",
+      "duration_h": 0.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-04 13:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88012
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-04 13:55",
+      "close_dt": "2023-01-04 17:34",
+      "duration_h": 3.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-04 13:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88028
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-04 18:25",
+      "close_dt": "2023-01-04 18:39",
+      "duration_h": 0.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-04 18:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88174
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-04 21:50",
+      "close_dt": "2023-01-06 06:32",
+      "duration_h": 32.7,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-01-04 21:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87932
+        },
+        {
+          "dt": "2023-01-05 15:50",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.88567
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-06 07:30",
+      "close_dt": "2023-01-06 17:08",
+      "duration_h": 9.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-06 07:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88314
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-06 20:10",
+      "close_dt": "2023-01-09 01:44",
+      "duration_h": 53.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-06 20:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88071
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-09 02:20",
+      "close_dt": "2023-01-09 05:30",
+      "duration_h": 3.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-09 02:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88047
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-09 07:05",
+      "close_dt": "2023-01-09 08:19",
+      "duration_h": 1.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-09 07:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8795
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-09 09:00",
+      "close_dt": "2023-01-09 11:10",
+      "duration_h": 2.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-09 09:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87928
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-09 17:10",
+      "close_dt": "2023-01-10 00:22",
+      "duration_h": 7.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-09 17:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88112
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-10 03:05",
+      "close_dt": "2023-01-12 11:13",
+      "duration_h": 56.13,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-01-10 03:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88144
+        },
+        {
+          "dt": "2023-01-11 16:25",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.88759
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-12 13:20",
+      "close_dt": "2023-01-17 13:53",
+      "duration_h": 120.55,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-12 13:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88489
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-17 19:45",
+      "close_dt": "2023-01-17 19:59",
+      "duration_h": 0.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-17 19:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88005
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-01-17 20:00",
+      "close_dt": "2023-01-17 20:59",
+      "duration_h": 0.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-17 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87929
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-01-17 21:35",
+      "close_dt": "2023-01-20 09:04",
+      "duration_h": 59.48,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-01-17 21:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87951
+        },
+        {
+          "dt": "2023-01-19 18:30",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87319
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-01-20 11:35",
+      "close_dt": "2023-01-23 09:21",
+      "duration_h": 69.77,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-20 11:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87776
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-01-23 17:20",
+      "close_dt": "2023-01-24 11:33",
+      "duration_h": 18.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-23 17:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87855
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-24 17:25",
+      "close_dt": "2023-01-24 17:51",
+      "duration_h": 0.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-24 17:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88355
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-24 19:30",
+      "close_dt": "2023-01-25 14:38",
+      "duration_h": 19.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-24 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88262
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-25 15:05",
+      "close_dt": "2023-01-25 17:07",
+      "duration_h": 2.03,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-25 15:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88222
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-01-26 02:50",
+      "close_dt": "2023-01-26 09:19",
+      "duration_h": 6.48,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-26 02:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87973
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-26 08:45",
+      "close_dt": "2023-01-26 10:23",
+      "duration_h": 1.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-26 08:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8806
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-26 10:55",
+      "close_dt": "2023-01-26 13:25",
+      "duration_h": 2.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-26 10:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88014
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-01-26 12:00",
+      "close_dt": "2023-01-31 15:13",
+      "duration_h": 123.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-26 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87977
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-31 17:10",
+      "close_dt": "2023-01-31 19:05",
+      "duration_h": 1.92,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-01-31 17:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88201
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-01-31 19:45",
+      "close_dt": "2023-02-09 09:01",
+      "duration_h": 205.27,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-01-31 19:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88142
+        },
+        {
+          "dt": "2023-02-02 11:50",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.89138
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-09 09:45",
+      "close_dt": "2023-02-09 10:26",
+      "duration_h": 0.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-09 09:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88729
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-09 13:30",
+      "close_dt": "2023-02-09 14:00",
+      "duration_h": 0.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-09 13:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88704
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-09 17:20",
+      "close_dt": "2023-02-09 20:52",
+      "duration_h": 3.53,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-09 17:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88484
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-10 02:00",
+      "close_dt": "2023-02-10 10:53",
+      "duration_h": 8.88,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-10 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88637
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-13 09:05",
+      "close_dt": "2023-02-13 14:15",
+      "duration_h": 5.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-13 09:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88586
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-13 19:20",
+      "close_dt": "2023-02-14 08:34",
+      "duration_h": 13.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-13 19:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88346
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-14 10:40",
+      "close_dt": "2023-02-14 11:35",
+      "duration_h": 0.92,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-14 10:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88257
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-14 12:05",
+      "close_dt": "2023-02-14 16:30",
+      "duration_h": 4.42,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-14 12:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88248
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-14 17:10",
+      "close_dt": "2023-02-15 03:58",
+      "duration_h": 10.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-14 17:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88164
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-15 05:20",
+      "close_dt": "2023-02-15 09:01",
+      "duration_h": 3.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-15 05:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88236
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-15 14:05",
+      "close_dt": "2023-02-16 11:21",
+      "duration_h": 21.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-15 14:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8883
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-16 12:45",
+      "close_dt": "2023-02-21 04:35",
+      "duration_h": 111.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-16 12:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8879
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-02-21 05:35",
+      "close_dt": "2023-02-21 11:31",
+      "duration_h": 5.93,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-21 05:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88711
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-21 15:10",
+      "close_dt": "2023-02-21 16:04",
+      "duration_h": 0.9,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-21 15:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87973
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-21 17:45",
+      "close_dt": "2023-02-24 13:19",
+      "duration_h": 67.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-21 17:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88142
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-24 16:00",
+      "close_dt": "2023-02-24 16:07",
+      "duration_h": 0.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-24 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88209
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-24 17:05",
+      "close_dt": "2023-02-24 18:32",
+      "duration_h": 1.45,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-24 17:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88248
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-02-24 18:55",
+      "close_dt": "2023-03-01 12:25",
+      "duration_h": 113.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-02-24 18:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88266
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-01 17:05",
+      "close_dt": "2023-03-01 18:45",
+      "duration_h": 1.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-01 17:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88834
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-01 20:25",
+      "close_dt": "2023-03-02 00:05",
+      "duration_h": 3.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-01 20:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88707
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-02 04:25",
+      "close_dt": "2023-03-02 11:31",
+      "duration_h": 7.1,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-02 04:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88689
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-02 12:05",
+      "close_dt": "2023-03-02 13:58",
+      "duration_h": 1.88,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-02 12:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88766
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-02 14:35",
+      "close_dt": "2023-03-02 21:04",
+      "duration_h": 6.48,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-02 14:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88742
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-03 04:50",
+      "close_dt": "2023-03-03 11:14",
+      "duration_h": 6.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-03 04:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8866
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-03 14:55",
+      "close_dt": "2023-03-03 15:29",
+      "duration_h": 0.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-03 14:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88544
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-03 16:15",
+      "close_dt": "2023-03-03 20:39",
+      "duration_h": 4.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-03 16:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88494
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-06 12:00",
+      "close_dt": "2023-03-06 12:35",
+      "duration_h": 0.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-06 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88368
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-06 18:50",
+      "close_dt": "2023-03-07 09:07",
+      "duration_h": 14.28,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-06 18:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88782
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-07 09:55",
+      "close_dt": "2023-03-10 10:01",
+      "duration_h": 72.1,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-07 09:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88692
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-10 12:00",
+      "close_dt": "2023-03-10 12:08",
+      "duration_h": 0.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-10 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88262
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-10 13:30",
+      "close_dt": "2023-03-10 19:00",
+      "duration_h": 5.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-10 13:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.884
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-10 19:30",
+      "close_dt": "2023-03-13 10:00",
+      "duration_h": 62.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-10 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88452
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-13 11:45",
+      "close_dt": "2023-03-14 18:25",
+      "duration_h": 30.67,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-03-13 11:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88515
+        },
+        {
+          "dt": "2023-03-14 10:10",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87908
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-14 19:35",
+      "close_dt": "2023-03-14 23:38",
+      "duration_h": 4.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-14 19:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88175
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-15 01:00",
+      "close_dt": "2023-03-15 10:22",
+      "duration_h": 9.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-15 01:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88306
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-15 11:50",
+      "close_dt": "2023-03-16 13:13",
+      "duration_h": 25.38,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-03-15 11:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.883
+        },
+        {
+          "dt": "2023-03-16 03:45",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87661
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-16 15:25",
+      "close_dt": "2023-03-21 12:00",
+      "duration_h": 116.58,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-03-16 15:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88011
+        },
+        {
+          "dt": "2023-03-21 09:00",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87406
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-22 01:00",
+      "close_dt": "2023-03-22 18:36",
+      "duration_h": 17.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-22 01:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88122
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-22 20:10",
+      "close_dt": "2023-03-22 20:32",
+      "duration_h": 0.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-22 20:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88227
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-23 01:05",
+      "close_dt": "2023-03-23 12:07",
+      "duration_h": 11.03,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-23 01:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88516
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-23 13:25",
+      "close_dt": "2023-03-23 15:01",
+      "duration_h": 1.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-23 13:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88466
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-23 15:45",
+      "close_dt": "2023-03-23 16:50",
+      "duration_h": 1.08,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-23 15:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88498
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-23 18:35",
+      "close_dt": "2023-03-23 18:55",
+      "duration_h": 0.33,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-23 18:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88486
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-23 20:00",
+      "close_dt": "2023-03-23 21:55",
+      "duration_h": 1.92,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-23 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88424
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-24 01:00",
+      "close_dt": "2023-03-24 04:39",
+      "duration_h": 3.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-24 01:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88146
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-24 04:25",
+      "close_dt": "2023-03-24 11:10",
+      "duration_h": 6.75,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-24 04:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88214
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-24 12:50",
+      "close_dt": "2023-03-24 15:57",
+      "duration_h": 3.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-24 12:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87915
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-24 17:20",
+      "close_dt": "2023-03-29 16:17",
+      "duration_h": 118.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-24 17:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88004
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-29 16:55",
+      "close_dt": "2023-03-30 01:37",
+      "duration_h": 8.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-29 16:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87975
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-30 07:05",
+      "close_dt": "2023-03-30 13:59",
+      "duration_h": 6.9,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-30 07:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88047
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-30 15:30",
+      "close_dt": "2023-03-30 16:10",
+      "duration_h": 0.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-30 15:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88141
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-03-30 16:15",
+      "close_dt": "2023-03-30 16:40",
+      "duration_h": 0.42,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-30 16:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88262
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-31 04:35",
+      "close_dt": "2023-03-31 10:45",
+      "duration_h": 6.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-03-31 04:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87953
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-03-31 12:50",
+      "close_dt": "2023-04-04 18:09",
+      "duration_h": 101.32,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-03-31 12:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87974
+        },
+        {
+          "dt": "2023-04-04 13:00",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87369
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-04 21:10",
+      "close_dt": "2023-04-05 03:51",
+      "duration_h": 6.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-04 21:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8761
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-05 06:05",
+      "close_dt": "2023-04-05 12:30",
+      "duration_h": 6.42,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-05 06:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87691
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-05 14:30",
+      "close_dt": "2023-04-06 17:17",
+      "duration_h": 26.78,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-05 14:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87705
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-06 19:40",
+      "close_dt": "2023-04-07 15:40",
+      "duration_h": 20.0,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-06 19:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87726
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-07 18:10",
+      "close_dt": "2023-04-12 10:14",
+      "duration_h": 112.07,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-07 18:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87835
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-04-12 04:30",
+      "close_dt": "2023-04-17 16:23",
+      "duration_h": 131.88,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-04-12 04:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87879
+        },
+        {
+          "dt": "2023-04-14 21:10",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.88562
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-12 11:45",
+      "close_dt": "2023-04-12 14:01",
+      "duration_h": 2.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-12 11:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87951
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-04-17 17:45",
+      "close_dt": "2023-04-18 09:17",
+      "duration_h": 15.53,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-17 17:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88298
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-04-18 10:40",
+      "close_dt": "2023-04-18 14:54",
+      "duration_h": 4.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-18 10:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88278
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-04-18 16:35",
+      "close_dt": "2023-04-19 09:40",
+      "duration_h": 17.08,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-18 16:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88165
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-04-19 11:50",
+      "close_dt": "2023-04-27 17:53",
+      "duration_h": 198.05,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-04-19 11:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88045
+        },
+        {
+          "dt": "2023-04-27 10:05",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.8861
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-19 16:00",
+      "close_dt": "2023-04-20 02:59",
+      "duration_h": 10.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-19 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88018
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-04-27 19:50",
+      "close_dt": "2023-04-28 05:28",
+      "duration_h": 9.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-27 19:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8831
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-28 08:40",
+      "close_dt": "2023-04-28 09:46",
+      "duration_h": 1.1,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-28 08:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88227
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-04-28 10:30",
+      "close_dt": "2023-05-03 15:00",
+      "duration_h": 124.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-04-28 10:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88195
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-05-03 02:20",
+      "close_dt": "2023-05-03 10:32",
+      "duration_h": 8.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-05-03 02:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88258
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-05-03 12:00",
+      "close_dt": "2023-05-03 18:50",
+      "duration_h": 6.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-05-03 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88166
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-05-04 04:15",
+      "close_dt": "2023-05-11 19:11",
+      "duration_h": 182.93,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2023-05-04 04:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.88066
+        },
+        {
+          "dt": "2023-05-05 09:50",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87431
+        },
+        {
+          "dt": "2023-05-11 10:10",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.86836
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-05-12 02:05",
+      "close_dt": "2023-05-24 12:52",
+      "duration_h": 298.78,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-05-12 02:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8725
+        },
+        {
+          "dt": "2023-05-24 04:10",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86694
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-05-24 17:50",
+      "close_dt": "2023-05-26 02:53",
+      "duration_h": 33.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-05-24 17:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86959
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-05-26 08:30",
+      "close_dt": "2023-06-21 11:32",
+      "duration_h": 627.03,
+      "nc": 4,
+      "entries": [
+        {
+          "dt": "2023-05-26 08:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87036
+        },
+        {
+          "dt": "2023-05-31 06:35",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86364
+        },
+        {
+          "dt": "2023-06-09 10:02",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.85813
+        },
+        {
+          "dt": "2023-06-19 13:10",
+          "lot": 0.05,
+          "step": 3,
+          "price": 0.85205
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-21 14:15",
+      "close_dt": "2023-06-21 17:41",
+      "duration_h": 3.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-21 14:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85864
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-21 19:00",
+      "close_dt": "2023-06-22 04:40",
+      "duration_h": 9.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-21 19:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8599
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-21 20:00",
+      "close_dt": "2023-06-22 14:01",
+      "duration_h": 18.02,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-21 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85999
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-22 15:10",
+      "close_dt": "2023-06-22 15:17",
+      "duration_h": 0.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-22 15:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86115
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-22 15:55",
+      "close_dt": "2023-06-22 16:59",
+      "duration_h": 1.07,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-22 15:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86163
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-22 16:59",
+      "close_dt": "2023-06-22 18:49",
+      "duration_h": 1.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-22 16:59",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86055
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-22 19:25",
+      "close_dt": "2023-06-23 09:40",
+      "duration_h": 14.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-22 19:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8599
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-23 13:50",
+      "close_dt": "2023-06-23 14:49",
+      "duration_h": 0.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-23 13:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85396
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-23 17:45",
+      "close_dt": "2023-06-23 18:59",
+      "duration_h": 1.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-23 17:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85638
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-23 20:05",
+      "close_dt": "2023-06-26 14:16",
+      "duration_h": 66.18,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-23 20:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85715
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-26 17:50",
+      "close_dt": "2023-06-26 18:55",
+      "duration_h": 1.08,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-26 17:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85865
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-27 03:30",
+      "close_dt": "2023-06-27 11:04",
+      "duration_h": 7.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-27 03:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85816
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-27 12:45",
+      "close_dt": "2023-06-27 17:57",
+      "duration_h": 5.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-27 12:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86011
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-06-27 19:00",
+      "close_dt": "2023-06-30 11:41",
+      "duration_h": 64.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-27 19:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8596
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-30 12:40",
+      "close_dt": "2023-06-30 16:58",
+      "duration_h": 4.3,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-30 12:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85856
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-06-30 17:45",
+      "close_dt": "2023-06-30 21:39",
+      "duration_h": 3.9,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-06-30 17:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8584
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-03 02:45",
+      "close_dt": "2023-07-03 14:45",
+      "duration_h": 12.0,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-03 02:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85908
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-03 15:55",
+      "close_dt": "2023-07-03 18:31",
+      "duration_h": 2.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-03 15:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85937
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-03 19:10",
+      "close_dt": "2023-07-06 17:56",
+      "duration_h": 70.77,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-07-03 19:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86009
+        },
+        {
+          "dt": "2023-07-06 13:40",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.85269
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-07-03 20:40",
+      "close_dt": "2023-07-04 09:23",
+      "duration_h": 12.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-03 20:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85978
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-06 19:00",
+      "close_dt": "2023-07-10 12:12",
+      "duration_h": 89.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-06 19:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85482
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-10 21:45",
+      "close_dt": "2023-07-12 18:55",
+      "duration_h": 45.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-10 21:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85535
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-07-13 02:25",
+      "close_dt": "2023-07-13 10:29",
+      "duration_h": 8.07,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-13 02:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85714
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-13 09:25",
+      "close_dt": "2023-07-14 23:26",
+      "duration_h": 38.02,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-13 09:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85656
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-07-14 20:15",
+      "close_dt": "2023-07-24 10:46",
+      "duration_h": 230.52,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-07-14 20:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85705
+        },
+        {
+          "dt": "2023-07-19 09:25",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86618
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-07-24 11:30",
+      "close_dt": "2023-07-25 10:44",
+      "duration_h": 23.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-24 11:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86225
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-07-25 12:35",
+      "close_dt": "2023-07-25 13:22",
+      "duration_h": 0.78,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-25 12:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86087
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-07-25 14:00",
+      "close_dt": "2023-07-25 17:14",
+      "duration_h": 3.23,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-25 14:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86031
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-26 05:00",
+      "close_dt": "2023-07-26 09:27",
+      "duration_h": 4.45,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-26 05:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.857
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-26 11:35",
+      "close_dt": "2023-07-27 13:02",
+      "duration_h": 25.45,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-26 11:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8578
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-07-27 14:55",
+      "close_dt": "2023-08-01 17:57",
+      "duration_h": 123.03,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-07-27 14:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85916
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-01 19:30",
+      "close_dt": "2023-08-02 15:18",
+      "duration_h": 19.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-01 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86011
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-02 02:05",
+      "close_dt": "2023-08-02 10:47",
+      "duration_h": 8.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-02 02:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86045
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-02 13:00",
+      "close_dt": "2023-08-11 20:00",
+      "duration_h": 223.0,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-08-02 13:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85936
+        },
+        {
+          "dt": "2023-08-10 19:00",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86569
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-08 20:45",
+      "close_dt": "2023-08-09 11:28",
+      "duration_h": 14.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-08 20:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85997
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-14 03:20",
+      "close_dt": "2023-08-14 17:07",
+      "duration_h": 13.78,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-14 03:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86224
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-14 19:25",
+      "close_dt": "2023-08-14 23:30",
+      "duration_h": 4.08,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-14 19:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86074
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-14 20:25",
+      "close_dt": "2023-08-24 15:17",
+      "duration_h": 234.87,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-08-14 20:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8606
+        },
+        {
+          "dt": "2023-08-17 13:50",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.85353
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-24 15:40",
+      "close_dt": "2023-08-24 16:43",
+      "duration_h": 1.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-24 15:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85637
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-24 18:50",
+      "close_dt": "2023-08-24 22:59",
+      "duration_h": 4.15,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-24 18:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85699
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-24 20:05",
+      "close_dt": "2023-08-25 11:04",
+      "duration_h": 14.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-24 20:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85726
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-25 13:55",
+      "close_dt": "2023-08-25 17:47",
+      "duration_h": 3.87,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-25 13:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85704
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-25 19:30",
+      "close_dt": "2023-08-28 10:10",
+      "duration_h": 62.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-25 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85774
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-25 20:00",
+      "close_dt": "2023-08-29 08:46",
+      "duration_h": 84.77,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-25 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85813
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-29 10:55",
+      "close_dt": "2023-08-29 12:08",
+      "duration_h": 1.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-29 10:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85782
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-29 12:00",
+      "close_dt": "2023-08-29 13:24",
+      "duration_h": 1.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-29 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85716
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-29 19:05",
+      "close_dt": "2023-08-30 10:41",
+      "duration_h": 15.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-29 19:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86029
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-30 11:55",
+      "close_dt": "2023-08-30 15:16",
+      "duration_h": 3.35,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-30 11:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85988
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-30 17:25",
+      "close_dt": "2023-08-31 06:00",
+      "duration_h": 12.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-30 17:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8594
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-08-31 09:45",
+      "close_dt": "2023-08-31 10:11",
+      "duration_h": 0.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-31 09:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85869
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-31 12:00",
+      "close_dt": "2023-08-31 14:09",
+      "duration_h": 2.15,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-31 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85681
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-08-31 15:05",
+      "close_dt": "2023-09-07 02:03",
+      "duration_h": 154.97,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-08-31 15:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85695
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-06 20:00",
+      "close_dt": "2023-09-11 10:49",
+      "duration_h": 110.82,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-06 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85752
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-09-11 12:15",
+      "close_dt": "2023-09-11 13:57",
+      "duration_h": 1.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-11 12:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85649
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-09-11 15:00",
+      "close_dt": "2023-09-11 17:42",
+      "duration_h": 2.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-11 15:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85653
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-12 03:05",
+      "close_dt": "2023-09-12 08:22",
+      "duration_h": 5.28,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-12 03:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85926
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-12 10:35",
+      "close_dt": "2023-09-14 20:44",
+      "duration_h": 58.15,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-12 10:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85833
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-09-14 21:50",
+      "close_dt": "2023-09-15 13:44",
+      "duration_h": 15.9,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-14 21:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85746
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-15 21:10",
+      "close_dt": "2023-09-18 13:32",
+      "duration_h": 64.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-15 21:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86119
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-18 14:40",
+      "close_dt": "2023-09-28 11:56",
+      "duration_h": 237.27,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-09-18 14:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86076
+        },
+        {
+          "dt": "2023-09-21 12:55",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86699
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-28 14:10",
+      "close_dt": "2023-09-28 15:01",
+      "duration_h": 0.85,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-28 14:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86425
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-09-28 15:35",
+      "close_dt": "2023-10-11 02:28",
+      "duration_h": 298.88,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-09-28 15:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8639
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-10-06 13:15",
+      "close_dt": "2023-10-06 15:34",
+      "duration_h": 2.32,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-10-06 13:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86455
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-10-09 16:00",
+      "close_dt": "2023-10-13 18:44",
+      "duration_h": 98.73,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-10-09 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86452
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-10-12 21:40",
+      "close_dt": "2023-10-13 10:28",
+      "duration_h": 12.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-10-12 21:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86468
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-10-13 16:20",
+      "close_dt": "2023-11-03 19:28",
+      "duration_h": 507.13,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-10-13 16:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8646
+        },
+        {
+          "dt": "2023-10-19 11:55",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87024
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-10-17 02:40",
+      "close_dt": "2023-10-17 09:32",
+      "duration_h": 6.87,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-10-17 02:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86422
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-01 12:40",
+      "close_dt": "2023-11-01 16:37",
+      "duration_h": 3.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-01 12:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86896
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-01 16:55",
+      "close_dt": "2023-11-02 10:03",
+      "duration_h": 17.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-01 16:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86947
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-06 03:35",
+      "close_dt": "2023-11-06 20:58",
+      "duration_h": 17.38,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-06 03:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86699
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-07 02:15",
+      "close_dt": "2023-11-07 18:58",
+      "duration_h": 16.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-07 02:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86823
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-11-08 02:45",
+      "close_dt": "2023-11-14 17:24",
+      "duration_h": 158.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-08 02:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87023
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-14 16:00",
+      "close_dt": "2023-11-15 04:36",
+      "duration_h": 12.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-14 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87001
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-11-15 04:35",
+      "close_dt": "2023-11-22 10:58",
+      "duration_h": 174.38,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-15 04:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.871
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-21 21:30",
+      "close_dt": "2023-11-22 16:27",
+      "duration_h": 18.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-21 21:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87045
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-11-22 19:15",
+      "close_dt": "2023-12-18 18:59",
+      "duration_h": 623.73,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2023-11-22 19:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87162
+        },
+        {
+          "dt": "2023-11-28 20:55",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86555
+        },
+        {
+          "dt": "2023-12-01 17:30",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.85872
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-11-23 09:10",
+      "close_dt": "2023-11-23 10:16",
+      "duration_h": 1.1,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-11-23 09:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87224
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-12-13 20:10",
+      "close_dt": "2023-12-14 11:54",
+      "duration_h": 15.73,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-12-13 20:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86227
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-12-18 12:50",
+      "close_dt": "2023-12-19 12:55",
+      "duration_h": 24.08,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-12-18 12:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8618
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-12-19 15:15",
+      "close_dt": "2023-12-19 16:58",
+      "duration_h": 1.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-12-19 15:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86021
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2023-12-19 18:25",
+      "close_dt": "2023-12-19 20:09",
+      "duration_h": 1.73,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2023-12-19 18:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86092
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2023-12-19 20:00",
+      "close_dt": "2024-01-02 10:04",
+      "duration_h": 326.07,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2023-12-19 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86172
+        },
+        {
+          "dt": "2023-12-26 09:35",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86829
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-01-02 12:40",
+      "close_dt": "2024-01-03 13:09",
+      "duration_h": 24.48,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-01-02 12:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86599
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-01-03 14:25",
+      "close_dt": "2024-01-03 15:45",
+      "duration_h": 1.33,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-01-03 14:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86525
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-01-03 16:35",
+      "close_dt": "2024-01-10 19:24",
+      "duration_h": 170.82,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2024-01-03 16:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86444
+        },
+        {
+          "dt": "2024-01-09 02:34",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.8589
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-01-10 19:55",
+      "close_dt": "2024-03-22 10:18",
+      "duration_h": 1718.38,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2024-01-10 19:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86105
+        },
+        {
+          "dt": "2024-01-23 21:25",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.85536
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-02-05 21:05",
+      "close_dt": "2024-02-06 11:07",
+      "duration_h": 14.03,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-02-05 21:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85685
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-02-15 13:20",
+      "close_dt": "2024-02-16 00:03",
+      "duration_h": 10.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-02-15 13:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85539
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-02-16 02:20",
+      "close_dt": "2024-02-19 03:23",
+      "duration_h": 73.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-02-16 02:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85518
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-02-19 05:00",
+      "close_dt": "2024-02-23 13:17",
+      "duration_h": 104.28,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-02-19 05:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85459
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-02-26 12:35",
+      "close_dt": "2024-03-05 16:16",
+      "duration_h": 195.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-02-26 12:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85551
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-03-06 16:00",
+      "close_dt": "2024-03-07 12:11",
+      "duration_h": 20.18,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-06 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85545
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-03-12 16:00",
+      "close_dt": "2024-03-12 18:39",
+      "duration_h": 2.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-12 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85501
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-03-14 06:50",
+      "close_dt": "2024-03-14 10:33",
+      "duration_h": 3.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-14 06:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85549
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-03-18 01:30",
+      "close_dt": "2024-03-19 19:09",
+      "duration_h": 41.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-18 01:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85491
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-03-21 05:05",
+      "close_dt": "2024-03-21 11:31",
+      "duration_h": 6.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-21 05:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85472
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-03-21 18:05",
+      "close_dt": "2024-03-28 11:06",
+      "duration_h": 161.02,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-21 18:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85685
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-03-28 16:45",
+      "close_dt": "2024-04-01 20:08",
+      "duration_h": 99.38,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-03-28 16:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85495
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-04-02 18:55",
+      "close_dt": "2024-04-10 13:02",
+      "duration_h": 186.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-02 18:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85645
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-04-10 10:40",
+      "close_dt": "2024-04-10 19:22",
+      "duration_h": 8.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-10 10:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85583
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-04-11 03:05",
+      "close_dt": "2024-04-11 10:05",
+      "duration_h": 7.0,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-11 03:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85688
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-04-11 15:10",
+      "close_dt": "2024-04-17 19:20",
+      "duration_h": 148.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-11 15:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85523
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-04-18 01:05",
+      "close_dt": "2024-04-18 11:35",
+      "duration_h": 10.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-18 01:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85696
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-04-18 13:20",
+      "close_dt": "2024-04-24 22:09",
+      "duration_h": 152.82,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2024-04-18 13:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8558
+        },
+        {
+          "dt": "2024-04-22 01:30",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.8614
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-04-25 01:40",
+      "close_dt": "2024-04-25 10:20",
+      "duration_h": 8.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-25 01:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85858
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-04-25 17:50",
+      "close_dt": "2024-04-26 10:11",
+      "duration_h": 16.35,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-25 17:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85729
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-04-25 20:20",
+      "close_dt": "2024-04-26 14:56",
+      "duration_h": 18.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-25 20:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85757
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-04-26 12:00",
+      "close_dt": "2024-05-03 18:22",
+      "duration_h": 174.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-04-26 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85742
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-05-03 16:00",
+      "close_dt": "2024-05-20 15:24",
+      "duration_h": 407.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-05-03 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85624
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-05-06 13:05",
+      "close_dt": "2024-05-06 18:08",
+      "duration_h": 5.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-05-06 13:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85622
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-05-16 02:30",
+      "close_dt": "2024-08-01 20:27",
+      "duration_h": 1865.95,
+      "nc": 4,
+      "entries": [
+        {
+          "dt": "2024-05-16 02:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85809
+        },
+        {
+          "dt": "2024-05-22 09:25",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.85202
+        },
+        {
+          "dt": "2024-06-10 07:25",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.84573
+        },
+        {
+          "dt": "2024-07-12 14:25",
+          "lot": 0.05,
+          "step": 3,
+          "price": 0.84023
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-06-24 16:05",
+      "close_dt": "2024-06-24 16:50",
+      "duration_h": 0.75,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-06-24 16:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84756
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-06-24 19:30",
+      "close_dt": "2024-06-25 13:48",
+      "duration_h": 18.3,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-06-24 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84601
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-06-27 05:45",
+      "close_dt": "2024-06-27 13:09",
+      "duration_h": 7.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-06-27 05:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84654
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-06-27 16:00",
+      "close_dt": "2024-06-28 10:17",
+      "duration_h": 18.28,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-06-27 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84704
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-06-28 11:35",
+      "close_dt": "2024-07-05 16:19",
+      "duration_h": 172.73,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-06-28 11:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8465
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-07-25 17:45",
+      "close_dt": "2024-07-29 21:58",
+      "duration_h": 100.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-07-25 17:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84234
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-07-31 12:00",
+      "close_dt": "2024-07-31 17:59",
+      "duration_h": 5.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-07-31 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84343
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-07-31 19:20",
+      "close_dt": "2024-08-12 09:29",
+      "duration_h": 278.15,
+      "nc": 4,
+      "entries": [
+        {
+          "dt": "2024-07-31 19:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84271
+        },
+        {
+          "dt": "2024-08-02 04:29",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84828
+        },
+        {
+          "dt": "2024-08-05 07:20",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.85415
+        },
+        {
+          "dt": "2024-08-05 15:55",
+          "lot": 0.05,
+          "step": 3,
+          "price": 0.86125
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-08-12 10:05",
+      "close_dt": "2024-08-12 17:44",
+      "duration_h": 7.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-12 10:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85576
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-08-12 18:25",
+      "close_dt": "2024-08-13 09:15",
+      "duration_h": 14.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-12 18:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85569
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-08-13 13:25",
+      "close_dt": "2024-08-16 04:37",
+      "duration_h": 63.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-13 13:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85403
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-08-16 08:00",
+      "close_dt": "2024-08-16 11:45",
+      "duration_h": 3.75,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-16 08:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85311
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-08-16 12:00",
+      "close_dt": "2024-08-19 22:34",
+      "duration_h": 82.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-16 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8522
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-08-16 16:00",
+      "close_dt": "2024-08-16 20:08",
+      "duration_h": 4.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-16 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85239
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-08-19 18:30",
+      "close_dt": "2024-08-21 17:34",
+      "duration_h": 47.07,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-19 18:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85227
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-08-20 12:40",
+      "close_dt": "2024-08-20 18:00",
+      "duration_h": 5.33,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-20 12:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8517
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-08-20 19:05",
+      "close_dt": "2024-08-20 20:31",
+      "duration_h": 1.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-08-20 19:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85262
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-08-21 20:00",
+      "close_dt": "2024-10-03 11:10",
+      "duration_h": 1023.17,
+      "nc": 4,
+      "entries": [
+        {
+          "dt": "2024-08-21 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85156
+        },
+        {
+          "dt": "2024-08-26 16:15",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84545
+        },
+        {
+          "dt": "2024-09-19 18:25",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.83956
+        },
+        {
+          "dt": "2024-09-23 20:55",
+          "lot": 0.05,
+          "step": 3,
+          "price": 0.83329
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-09-18 04:00",
+      "close_dt": "2024-09-18 09:37",
+      "duration_h": 5.62,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-09-18 04:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84493
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-03 13:40",
+      "close_dt": "2024-10-03 17:47",
+      "duration_h": 4.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-03 13:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8416
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-03 19:50",
+      "close_dt": "2024-10-04 09:29",
+      "duration_h": 13.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-03 19:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8405
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-04 12:25",
+      "close_dt": "2024-10-04 12:52",
+      "duration_h": 0.45,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-04 12:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83825
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-04 13:50",
+      "close_dt": "2024-10-04 17:57",
+      "duration_h": 4.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-04 13:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83767
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-07 02:10",
+      "close_dt": "2024-10-07 11:23",
+      "duration_h": 9.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-07 02:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83611
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-07 15:25",
+      "close_dt": "2024-10-08 03:08",
+      "duration_h": 11.72,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-07 15:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83951
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-08 06:00",
+      "close_dt": "2024-10-08 15:10",
+      "duration_h": 9.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-08 06:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83881
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-08 17:20",
+      "close_dt": "2024-10-09 23:56",
+      "duration_h": 30.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-08 17:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8378
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-09 17:30",
+      "close_dt": "2024-10-10 16:45",
+      "duration_h": 23.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-09 17:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83744
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-10 18:50",
+      "close_dt": "2024-10-11 07:37",
+      "duration_h": 12.78,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-10 18:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83716
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-11 08:35",
+      "close_dt": "2024-10-11 10:59",
+      "duration_h": 2.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-11 08:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83819
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-11 12:25",
+      "close_dt": "2024-10-18 18:51",
+      "duration_h": 174.43,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2024-10-11 12:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83733
+        },
+        {
+          "dt": "2024-10-18 09:25",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.82985
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-16 12:05",
+      "close_dt": "2024-10-16 16:39",
+      "duration_h": 4.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-16 12:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83698
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-21 04:35",
+      "close_dt": "2024-10-21 11:28",
+      "duration_h": 6.88,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-21 04:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83264
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-21 12:40",
+      "close_dt": "2024-10-22 13:37",
+      "duration_h": 24.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-21 12:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83305
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-22 15:00",
+      "close_dt": "2024-10-22 16:00",
+      "duration_h": 1.0,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-22 15:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83344
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-22 16:55",
+      "close_dt": "2024-10-24 01:15",
+      "duration_h": 32.33,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-22 16:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83393
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-10-24 06:05",
+      "close_dt": "2024-10-30 15:53",
+      "duration_h": 153.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-24 06:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8346
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-30 16:00",
+      "close_dt": "2024-10-30 16:11",
+      "duration_h": 0.18,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-10-30 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83504
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-10-30 17:55",
+      "close_dt": "2024-11-06 02:12",
+      "duration_h": 152.28,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2024-10-30 17:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83472
+        },
+        {
+          "dt": "2024-11-04 11:35",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84092
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-11-06 02:25",
+      "close_dt": "2024-11-06 02:45",
+      "duration_h": 0.33,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-06 02:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83763
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-06 04:00",
+      "close_dt": "2024-11-12 19:06",
+      "duration_h": 159.1,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2024-11-06 04:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83573
+        },
+        {
+          "dt": "2024-11-08 19:20",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.82956
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-13 02:35",
+      "close_dt": "2024-11-13 15:32",
+      "duration_h": 12.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-13 02:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83338
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-13 20:10",
+      "close_dt": "2024-11-14 14:47",
+      "duration_h": 18.62,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-13 20:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83119
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-14 15:05",
+      "close_dt": "2024-11-15 09:29",
+      "duration_h": 18.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-14 15:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83166
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-11-15 14:35",
+      "close_dt": "2024-11-20 09:32",
+      "duration_h": 114.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-15 14:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83394
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-11-20 11:40",
+      "close_dt": "2024-11-20 16:56",
+      "duration_h": 5.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-20 11:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83357
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-20 12:10",
+      "close_dt": "2024-11-22 09:37",
+      "duration_h": 45.45,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-20 12:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83336
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-22 10:50",
+      "close_dt": "2024-11-25 01:30",
+      "duration_h": 62.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-22 10:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83244
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-25 02:00",
+      "close_dt": "2024-11-25 10:59",
+      "duration_h": 8.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-25 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83215
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-11-25 12:00",
+      "close_dt": "2024-11-26 02:16",
+      "duration_h": 14.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-25 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83419
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-11-26 02:55",
+      "close_dt": "2024-11-27 23:01",
+      "duration_h": 44.1,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-26 02:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83422
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-27 08:35",
+      "close_dt": "2024-11-27 10:21",
+      "duration_h": 1.77,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-11-27 08:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83345
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-11-27 11:00",
+      "close_dt": "2024-12-13 09:01",
+      "duration_h": 382.02,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2024-11-27 11:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83456
+        },
+        {
+          "dt": "2024-12-02 09:25",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.82842
+        },
+        {
+          "dt": "2024-12-11 17:40",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.82281
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-13 12:00",
+      "close_dt": "2024-12-16 16:51",
+      "duration_h": 76.85,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-13 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82964
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-16 19:20",
+      "close_dt": "2024-12-17 09:02",
+      "duration_h": 13.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-16 19:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82868
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-16 20:25",
+      "close_dt": "2024-12-17 02:54",
+      "duration_h": 6.48,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-16 20:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82821
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-17 03:35",
+      "close_dt": "2024-12-20 05:14",
+      "duration_h": 73.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-17 03:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82904
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-20 02:05",
+      "close_dt": "2024-12-20 16:13",
+      "duration_h": 14.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-20 02:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82939
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-20 18:45",
+      "close_dt": "2024-12-20 19:48",
+      "duration_h": 1.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-20 18:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82848
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-20 20:00",
+      "close_dt": "2024-12-20 20:39",
+      "duration_h": 0.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-20 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82745
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-23 05:45",
+      "close_dt": "2024-12-23 10:26",
+      "duration_h": 4.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-23 05:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82973
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-23 13:00",
+      "close_dt": "2024-12-23 13:33",
+      "duration_h": 0.55,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-23 13:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82818
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-23 15:20",
+      "close_dt": "2024-12-23 18:12",
+      "duration_h": 2.87,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-23 15:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82948
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-23 16:00",
+      "close_dt": "2024-12-24 05:48",
+      "duration_h": 13.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-23 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83027
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-24 08:15",
+      "close_dt": "2024-12-24 14:48",
+      "duration_h": 6.55,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-24 08:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82926
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-24 20:00",
+      "close_dt": "2024-12-24 23:25",
+      "duration_h": 3.42,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-24 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82975
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-26 02:05",
+      "close_dt": "2024-12-26 13:27",
+      "duration_h": 11.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-26 02:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82898
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-26 06:25",
+      "close_dt": "2024-12-30 15:54",
+      "duration_h": 105.48,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-26 06:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82907
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-30 02:55",
+      "close_dt": "2024-12-31 10:53",
+      "duration_h": 31.97,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-30 02:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82891
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2024-12-31 02:00",
+      "close_dt": "2024-12-31 16:48",
+      "duration_h": 14.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-31 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82925
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2024-12-31 11:40",
+      "close_dt": "2024-12-31 12:29",
+      "duration_h": 0.82,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2024-12-31 11:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82938
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-01-02 02:00",
+      "close_dt": "2025-01-02 09:59",
+      "duration_h": 7.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-02 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82681
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-01-02 13:15",
+      "close_dt": "2025-01-02 18:04",
+      "duration_h": 4.82,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-02 13:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82963
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-01-02 19:10",
+      "close_dt": "2025-01-08 12:32",
+      "duration_h": 137.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-02 19:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82945
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-01-03 02:20",
+      "close_dt": "2025-01-06 13:16",
+      "duration_h": 82.93,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-03 02:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8293
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-01-07 19:05",
+      "close_dt": "2025-01-08 13:12",
+      "duration_h": 18.12,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-07 19:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.82958
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-01-08 16:25",
+      "close_dt": "2025-01-24 18:39",
+      "duration_h": 386.23,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2025-01-08 16:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83426
+        },
+        {
+          "dt": "2025-01-13 04:00",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84008
+        },
+        {
+          "dt": "2025-01-20 17:15",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.84674
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-01-27 02:40",
+      "close_dt": "2025-01-27 12:22",
+      "duration_h": 9.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-27 02:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84058
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-01-27 15:15",
+      "close_dt": "2025-01-27 22:37",
+      "duration_h": 7.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-27 15:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84088
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-01-28 03:55",
+      "close_dt": "2025-01-28 15:53",
+      "duration_h": 11.97,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-01-28 03:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83848
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-01-28 17:35",
+      "close_dt": "2025-02-06 14:01",
+      "duration_h": 212.43,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-01-28 17:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83876
+        },
+        {
+          "dt": "2025-02-03 10:35",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.83207
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-02-06 15:15",
+      "close_dt": "2025-03-04 22:25",
+      "duration_h": 631.17,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2025-02-06 15:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83704
+        },
+        {
+          "dt": "2025-02-17 19:15",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.8308
+        },
+        {
+          "dt": "2025-02-27 17:05",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.82507
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-02-06 19:45",
+      "close_dt": "2025-02-07 12:33",
+      "duration_h": 16.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-02-06 19:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8344
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-02-13 08:00",
+      "close_dt": "2025-02-13 09:01",
+      "duration_h": 1.02,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-02-13 08:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83539
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-02-13 10:25",
+      "close_dt": "2025-02-13 15:04",
+      "duration_h": 4.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-02-13 10:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83427
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-05 02:00",
+      "close_dt": "2025-03-13 15:10",
+      "duration_h": 205.17,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2025-03-05 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83023
+        },
+        {
+          "dt": "2025-03-06 02:10",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.83737
+        },
+        {
+          "dt": "2025-03-11 16:40",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.84419
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-13 16:55",
+      "close_dt": "2025-03-14 01:01",
+      "duration_h": 8.1,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-13 16:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83869
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-14 01:20",
+      "close_dt": "2025-03-20 14:17",
+      "duration_h": 156.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-14 01:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83792
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-03-20 16:00",
+      "close_dt": "2025-03-21 08:57",
+      "duration_h": 16.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-20 16:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8365
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-21 14:05",
+      "close_dt": "2025-03-24 12:30",
+      "duration_h": 70.42,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-21 14:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83731
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-03-21 20:00",
+      "close_dt": "2025-03-24 02:55",
+      "duration_h": 54.92,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-21 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83729
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-03-24 16:45",
+      "close_dt": "2025-03-26 11:43",
+      "duration_h": 42.97,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-24 16:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83629
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-03-26 13:25",
+      "close_dt": "2025-03-31 19:33",
+      "duration_h": 126.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-26 13:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83644
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-31 02:00",
+      "close_dt": "2025-03-31 09:15",
+      "duration_h": 7.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-31 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83675
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-31 12:00",
+      "close_dt": "2025-03-31 14:41",
+      "duration_h": 2.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-31 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83643
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-03-31 20:05",
+      "close_dt": "2025-04-01 08:59",
+      "duration_h": 12.9,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-03-31 20:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83754
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-01 10:15",
+      "close_dt": "2025-04-01 13:10",
+      "duration_h": 2.92,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-01 10:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83676
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-01 13:30",
+      "close_dt": "2025-04-01 20:12",
+      "duration_h": 6.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-01 13:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83636
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-02 02:00",
+      "close_dt": "2025-04-02 16:55",
+      "duration_h": 14.92,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-02 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83532
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-02 19:20",
+      "close_dt": "2025-04-02 23:18",
+      "duration_h": 3.97,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-02 19:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83689
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-02 21:30",
+      "close_dt": "2025-04-02 23:09",
+      "duration_h": 1.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-02 21:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83667
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-03 02:00",
+      "close_dt": "2025-04-03 02:28",
+      "duration_h": 0.47,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-03 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83325
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-03 04:00",
+      "close_dt": "2025-04-03 05:24",
+      "duration_h": 1.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-03 04:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83514
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-03 05:55",
+      "close_dt": "2025-04-03 09:35",
+      "duration_h": 3.67,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-03 05:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83572
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-03 10:25",
+      "close_dt": "2025-04-03 11:40",
+      "duration_h": 1.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-03 10:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.83553
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-03 13:15",
+      "close_dt": "2025-04-03 13:27",
+      "duration_h": 0.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-03 13:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84168
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-03 14:30",
+      "close_dt": "2025-04-09 21:05",
+      "duration_h": 150.58,
+      "nc": 5,
+      "entries": [
+        {
+          "dt": "2025-04-03 14:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84045
+        },
+        {
+          "dt": "2025-04-04 07:00",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84655
+        },
+        {
+          "dt": "2025-04-07 09:55",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.85299
+        },
+        {
+          "dt": "2025-04-08 10:20",
+          "lot": 0.05,
+          "step": 3,
+          "price": 0.85865
+        },
+        {
+          "dt": "2025-04-09 15:10",
+          "lot": 0.08,
+          "step": 4,
+          "price": 0.86432
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-10 03:40",
+      "close_dt": "2025-04-10 07:49",
+      "duration_h": 4.15,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-10 03:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85494
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-10 09:05",
+      "close_dt": "2025-04-10 09:32",
+      "duration_h": 0.45,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-10 09:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85423
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-10 10:30",
+      "close_dt": "2025-04-14 16:22",
+      "duration_h": 101.87,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-04-10 10:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85491
+        },
+        {
+          "dt": "2025-04-11 02:45",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86519
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-14 17:20",
+      "close_dt": "2025-04-14 19:59",
+      "duration_h": 2.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-14 17:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86165
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-15 02:00",
+      "close_dt": "2025-04-15 03:03",
+      "duration_h": 1.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-15 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86136
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-15 09:15",
+      "close_dt": "2025-04-15 09:59",
+      "duration_h": 0.73,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-15 09:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85965
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-15 14:20",
+      "close_dt": "2025-04-15 14:31",
+      "duration_h": 0.18,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-15 14:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85696
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-15 15:55",
+      "close_dt": "2025-04-15 16:13",
+      "duration_h": 0.3,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-15 15:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85615
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-16 04:00",
+      "close_dt": "2025-04-17 15:35",
+      "duration_h": 35.58,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-04-16 04:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85432
+        },
+        {
+          "dt": "2025-04-16 21:05",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86058
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-17 18:10",
+      "close_dt": "2025-04-17 19:26",
+      "duration_h": 1.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-17 18:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85777
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-18 03:30",
+      "close_dt": "2025-04-23 00:31",
+      "duration_h": 117.02,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-18 03:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85681
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-23 02:20",
+      "close_dt": "2025-04-23 16:51",
+      "duration_h": 14.52,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-23 02:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85544
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-23 18:30",
+      "close_dt": "2025-04-23 19:45",
+      "duration_h": 1.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-23 18:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85667
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-24 02:00",
+      "close_dt": "2025-04-24 09:57",
+      "duration_h": 7.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-24 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85414
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-24 04:35",
+      "close_dt": "2025-04-24 17:51",
+      "duration_h": 13.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-24 04:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8546
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-24 19:30",
+      "close_dt": "2025-04-25 03:38",
+      "duration_h": 8.13,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-24 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85397
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-04-24 20:00",
+      "close_dt": "2025-05-07 09:17",
+      "duration_h": 301.28,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-04-24 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85381
+        },
+        {
+          "dt": "2025-05-06 14:01",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84811
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-04-28 06:15",
+      "close_dt": "2025-04-28 09:41",
+      "duration_h": 3.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-04-28 06:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85429
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-05-02 14:25",
+      "close_dt": "2025-05-02 16:00",
+      "duration_h": 1.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-05-02 14:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85288
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-05-05 05:00",
+      "close_dt": "2025-05-05 10:48",
+      "duration_h": 5.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-05-05 05:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85293
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-05-05 11:40",
+      "close_dt": "2025-05-05 14:45",
+      "duration_h": 3.08,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-05-05 11:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85275
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-05-07 14:15",
+      "close_dt": "2025-05-29 17:50",
+      "duration_h": 531.58,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2025-05-07 14:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.85117
+        },
+        {
+          "dt": "2025-05-12 10:35",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84283
+        },
+        {
+          "dt": "2025-05-29 02:55",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.83646
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-05-29 20:45",
+      "close_dt": "2025-05-30 08:20",
+      "duration_h": 11.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-05-29 20:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84288
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-05-30 03:45",
+      "close_dt": "2025-05-30 20:39",
+      "duration_h": 16.9,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-05-30 03:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84246
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-06-02 08:45",
+      "close_dt": "2025-06-03 17:41",
+      "duration_h": 32.93,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-06-02 08:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84276
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-06-03 20:20",
+      "close_dt": "2025-06-04 15:12",
+      "duration_h": 18.87,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-06-03 20:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84118
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-06-04 17:30",
+      "close_dt": "2025-06-05 16:17",
+      "duration_h": 22.78,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-06-04 17:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84214
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-06-05 04:00",
+      "close_dt": "2025-06-05 09:38",
+      "duration_h": 5.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-06-05 04:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84286
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-06-05 17:45",
+      "close_dt": "2025-06-10 09:36",
+      "duration_h": 111.85,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-06-05 17:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84331
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-06-05 21:10",
+      "close_dt": "2025-06-09 14:34",
+      "duration_h": 89.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-06-05 21:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84255
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-06-09 20:00",
+      "close_dt": "2025-07-30 12:26",
+      "duration_h": 1216.43,
+      "nc": 5,
+      "entries": [
+        {
+          "dt": "2025-06-09 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.84261
+        },
+        {
+          "dt": "2025-06-12 09:20",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.84921
+        },
+        {
+          "dt": "2025-06-18 04:45",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.85574
+        },
+        {
+          "dt": "2025-07-02 16:30",
+          "lot": 0.05,
+          "step": 3,
+          "price": 0.86537
+        },
+        {
+          "dt": "2025-07-25 10:55",
+          "lot": 0.08,
+          "step": 4,
+          "price": 0.87222
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-07-29 17:30",
+      "close_dt": "2025-08-01 11:58",
+      "duration_h": 66.47,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-07-29 17:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86571
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-01 14:15",
+      "close_dt": "2025-08-07 14:02",
+      "duration_h": 143.78,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-08-01 14:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86708
+        },
+        {
+          "dt": "2025-08-07 02:05",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.873
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-07 18:10",
+      "close_dt": "2025-08-07 18:57",
+      "duration_h": 0.78,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-07 18:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86742
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-08-07 21:05",
+      "close_dt": "2025-08-08 01:02",
+      "duration_h": 3.95,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-07 21:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86687
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-08-08 03:35",
+      "close_dt": "2025-08-13 05:53",
+      "duration_h": 122.3,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-08-08 03:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86802
+        },
+        {
+          "dt": "2025-08-12 12:05",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.86243
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-08 10:40",
+      "close_dt": "2025-08-08 11:55",
+      "duration_h": 1.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-08 10:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86734
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-08-13 08:00",
+      "close_dt": "2025-08-20 18:53",
+      "duration_h": 178.88,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-13 08:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86519
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-20 17:50",
+      "close_dt": "2025-08-21 09:46",
+      "duration_h": 15.93,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-20 17:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86597
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-21 10:35",
+      "close_dt": "2025-08-21 12:31",
+      "duration_h": 1.93,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-21 10:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8663
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-21 15:50",
+      "close_dt": "2025-08-21 17:02",
+      "duration_h": 1.2,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-21 15:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86632
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-21 18:40",
+      "close_dt": "2025-08-22 11:30",
+      "duration_h": 16.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-21 18:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86551
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-08-22 10:00",
+      "close_dt": "2025-08-22 17:10",
+      "duration_h": 7.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-22 10:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86477
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-22 17:55",
+      "close_dt": "2025-08-25 14:34",
+      "duration_h": 68.65,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-22 17:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86658
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-25 15:40",
+      "close_dt": "2025-08-25 18:43",
+      "duration_h": 3.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-25 15:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86638
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-08-26 04:20",
+      "close_dt": "2025-08-26 17:42",
+      "duration_h": 13.37,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-26 04:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86388
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-08-26 18:20",
+      "close_dt": "2025-08-29 10:55",
+      "duration_h": 64.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-26 18:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86441
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-29 12:55",
+      "close_dt": "2025-08-29 15:58",
+      "duration_h": 3.05,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-29 12:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86718
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-08-29 16:25",
+      "close_dt": "2025-08-29 18:48",
+      "duration_h": 2.38,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-08-29 16:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86684
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-01 07:40",
+      "close_dt": "2025-09-01 16:11",
+      "duration_h": 8.52,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-01 07:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.866
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-09-02 03:55",
+      "close_dt": "2025-09-02 10:05",
+      "duration_h": 6.17,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-02 03:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86452
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-02 12:10",
+      "close_dt": "2025-09-03 16:34",
+      "duration_h": 28.4,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-02 12:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86842
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-04 03:05",
+      "close_dt": "2025-09-04 11:41",
+      "duration_h": 8.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-04 03:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86754
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-04 13:20",
+      "close_dt": "2025-09-09 13:54",
+      "duration_h": 120.57,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-04 13:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8667
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-09 14:55",
+      "close_dt": "2025-09-10 08:48",
+      "duration_h": 17.88,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-09 14:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.866
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-09-09 16:15",
+      "close_dt": "2025-09-16 17:31",
+      "duration_h": 169.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-09 16:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86579
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-17 02:25",
+      "close_dt": "2025-09-17 10:24",
+      "duration_h": 7.98,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-17 02:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86948
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-17 16:25",
+      "close_dt": "2025-09-17 21:00",
+      "duration_h": 4.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-17 16:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86786
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-17 21:25",
+      "close_dt": "2025-09-17 22:40",
+      "duration_h": 1.25,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-17 21:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86821
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-18 03:55",
+      "close_dt": "2025-09-18 08:08",
+      "duration_h": 4.22,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-09-18 03:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86781
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-09-18 09:00",
+      "close_dt": "2025-10-01 15:15",
+      "duration_h": 318.25,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-09-18 09:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86717
+        },
+        {
+          "dt": "2025-09-23 19:15",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87308
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-01 16:35",
+      "close_dt": "2025-10-01 18:23",
+      "duration_h": 1.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-01 16:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86939
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-01 19:30",
+      "close_dt": "2025-10-02 09:02",
+      "duration_h": 13.53,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-01 19:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86998
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-02 07:20",
+      "close_dt": "2025-10-06 10:08",
+      "duration_h": 98.8,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-02 07:20",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87075
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-02 12:00",
+      "close_dt": "2025-10-02 13:36",
+      "duration_h": 1.6,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-02 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87036
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-06 12:35",
+      "close_dt": "2025-10-06 14:16",
+      "duration_h": 1.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-06 12:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86827
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-06 18:40",
+      "close_dt": "2025-10-07 14:38",
+      "duration_h": 19.97,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-06 18:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86881
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-07 16:35",
+      "close_dt": "2025-10-10 09:46",
+      "duration_h": 65.18,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-07 16:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86883
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-10 12:55",
+      "close_dt": "2025-10-10 17:55",
+      "duration_h": 5.0,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-10 12:55",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87116
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-10 20:15",
+      "close_dt": "2025-10-13 10:05",
+      "duration_h": 61.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-10 20:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86958
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-13 02:00",
+      "close_dt": "2025-10-13 13:35",
+      "duration_h": 11.58,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-13 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86967
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-13 12:00",
+      "close_dt": "2025-10-14 09:16",
+      "duration_h": 21.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-13 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86937
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-14 11:50",
+      "close_dt": "2025-10-14 15:42",
+      "duration_h": 3.87,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-14 11:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87047
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-14 12:40",
+      "close_dt": "2025-10-15 09:18",
+      "duration_h": 20.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-14 12:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87075
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-15 11:40",
+      "close_dt": "2025-10-15 13:22",
+      "duration_h": 1.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-15 11:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87169
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-15 15:30",
+      "close_dt": "2025-10-15 17:50",
+      "duration_h": 2.33,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-15 15:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87068
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-15 21:30",
+      "close_dt": "2025-10-16 21:34",
+      "duration_h": 24.07,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-15 21:30",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86937
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-17 02:00",
+      "close_dt": "2025-10-17 21:16",
+      "duration_h": 19.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-17 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87032
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-20 06:25",
+      "close_dt": "2025-10-20 10:07",
+      "duration_h": 3.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-20 06:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86819
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-20 11:40",
+      "close_dt": "2025-10-22 09:01",
+      "duration_h": 45.35,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-20 11:40",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86881
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-22 09:15",
+      "close_dt": "2025-10-22 09:34",
+      "duration_h": 0.32,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-22 09:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86978
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-10-22 10:45",
+      "close_dt": "2025-10-23 17:17",
+      "duration_h": 30.53,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-22 10:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87028
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-22 12:00",
+      "close_dt": "2025-10-22 14:45",
+      "duration_h": 2.75,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-22 12:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87063
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-23 04:50",
+      "close_dt": "2025-10-23 09:32",
+      "duration_h": 4.7,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-10-23 04:50",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86951
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-10-23 11:25",
+      "close_dt": "2025-11-26 15:27",
+      "duration_h": 820.03,
+      "nc": 3,
+      "entries": [
+        {
+          "dt": "2025-10-23 11:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.86909
+        },
+        {
+          "dt": "2025-10-24 18:35",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.87461
+        },
+        {
+          "dt": "2025-10-29 20:05",
+          "lot": 0.03,
+          "step": 2,
+          "price": 0.88112
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-11-24 02:00",
+      "close_dt": "2025-11-24 10:26",
+      "duration_h": 8.43,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-11-24 02:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87897
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-11-24 20:00",
+      "close_dt": "2025-11-26 14:09",
+      "duration_h": 42.15,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-11-24 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87922
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-11-26 14:45",
+      "close_dt": "2025-12-11 21:23",
+      "duration_h": 366.63,
+      "nc": 2,
+      "entries": [
+        {
+          "dt": "2025-11-26 14:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87938
+        },
+        {
+          "dt": "2025-12-10 16:15",
+          "lot": 0.02,
+          "step": 1,
+          "price": 0.8735
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-12-01 20:25",
+      "close_dt": "2025-12-03 11:06",
+      "duration_h": 38.68,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-01 20:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87895
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-12-12 02:15",
+      "close_dt": "2025-12-16 12:53",
+      "duration_h": 106.63,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-12 02:15",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87678
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-12-16 14:25",
+      "close_dt": "2025-12-16 22:56",
+      "duration_h": 8.52,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-16 14:25",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.876
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-12-16 20:05",
+      "close_dt": "2025-12-17 09:01",
+      "duration_h": 12.93,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-16 20:05",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87616
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-12-17 09:01",
+      "close_dt": "2025-12-17 09:31",
+      "duration_h": 0.5,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-17 09:01",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87717
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-12-17 16:35",
+      "close_dt": "2025-12-17 17:58",
+      "duration_h": 1.38,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-17 16:35",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87874
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "short",
+      "open_dt": "2025-12-17 19:45",
+      "close_dt": "2025-12-18 14:01",
+      "duration_h": 18.27,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-17 19:45",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.8776
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-12-18 20:00",
+      "close_dt": "2025-12-19 16:19",
+      "duration_h": 20.32,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-18 20:00",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87577
+        }
+      ]
+    },
+    {
+      "ea": "EURGBP-OFF",
+      "pair": "EURGBP",
+      "pos_dir": "long",
+      "open_dt": "2025-12-19 18:10",
+      "close_dt": "2025-12-30 23:59",
+      "duration_h": 269.83,
+      "nc": 1,
+      "entries": [
+        {
+          "dt": "2025-12-19 18:10",
+          "lot": 0.01,
+          "step": 0,
+          "price": 0.87606
+        }
+      ]
+    }
+  ],
+  "anomaly": []
+}
