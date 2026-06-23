@@ -73,35 +73,33 @@ def weekly_nc(groups):
     return dict(sorted(all_weeks.items()))
 
 
-def weekly_max_loss(groups, pair):
-    """各週のナンピン積み上がり時点での推定最大含み損（円）を集計
+def weekly_max_loss(groups, pair, meta):
+    """各週の推定最大含み損（円）— NC+1想定発動価格ベース・保守的上限推計
 
-    各ナンピンステップN入った瞬間、直前ステップ0〜N-1の含み損を計算し
-    その週の最大値を記録する。実際の最悪点（ステップ間）より小さい可能性があるため
-    下限値（少なくともこれだけの含み損があったと推定できる値）として扱う。
+    ステップNまで保有中、NC+1が発動するとしたら price_N ± NanpinPips の価格での
+    ステップ0〜Nの合計含み損を計算し、その週の最大値を記録する。
+    実際のDD（MT5実績）はこの値以下になることが多い（保守的上限）。
     """
     jpy_per_lot_per_pip = PAIR_JPY_PER_LOT_PER_PIP.get(pair, PIP_SIZE * CONTRACT * 150)
+    nanpin_pips = float(meta.get('NanpinEntryPips', 120))
     weekly = {}
 
     for g in groups:
         entries = g['entries']
-        if len(entries) < 2:
-            continue
         pos_dir = g['pos_dir']
 
-        for n in range(1, len(entries)):
-            step_n  = entries[n]
-            price_n = step_n['price']
-            week    = get_monday(step_n['dt'])
+        for n in range(len(entries)):
+            price_n  = entries[n]['price']
+            # NC+1が発動するとしたら想定される価格（不利方向に NanpinPips 進んだ点）
+            projected = price_n - nanpin_pips * PIP_SIZE if pos_dir == 'long' else price_n + nanpin_pips * PIP_SIZE
+            week = get_monday(entries[n]['dt'])
 
             total_loss = 0.0
-            for i in range(n):
+            for i in range(n + 1):
                 price_i = entries[i]['price']
                 lot_i   = entries[i]['lot']
-                # LONGはprice下落が損失、SHORTはprice上昇が損失
-                diff = (price_i - price_n) if pos_dir == 'long' else (price_n - price_i)
-                pips = diff / PIP_SIZE
-                total_loss += lot_i * pips * jpy_per_lot_per_pip
+                diff = (price_i - projected) if pos_dir == 'long' else (projected - price_i)
+                total_loss += lot_i * (diff / PIP_SIZE) * jpy_per_lot_per_pip
 
             if total_loss > 0:
                 weekly[week] = max(weekly.get(week, 0.0), total_loss)
@@ -117,7 +115,7 @@ for d in all_data:
     key  = d['meta']['bt_name']
     pair = key.split('-')[2] if '-' in key else key
     chart_data[key] = weekly_nc(d['normal'])
-    loss_data[key]  = weekly_max_loss(d['normal'], pair)
+    loss_data[key]  = weekly_max_loss(d['normal'], pair, d['meta'])
     all_weeks_set.update(loss_data[key].keys())
 
 # 全ペア共通の週リスト（損失グラフ用）
@@ -281,17 +279,12 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
 <section>
   <h2>週次 推定最大含み損（円）</h2>
   <p style="font-size:12px;color:#888;margin-bottom:12px">
-    各ナンピンステップが入った瞬間の含み損を実約定価格から計算。
-    ステップ間の最悪点は含まないため<strong>下限推定値</strong>。
+    NC+1が発動するとしたら想定される価格（実約定価格±NanpinPips）での保有ポジション合計含み損。
+    実際のDDより大きくなる傾向の<strong>保守的上限推計</strong>。3ペアの積み上げ表示。
     レート固定近似：{RATE_NOTE}
   </p>
-  <div class="toolbar" style="margin-bottom:10px">
-    <label style="font-size:13px;color:#555"><input type="checkbox" id="lossUnify" checked> Y軸を統一（3ペア比較）</label>
-  </div>
-  <div class="charts-scroll" id="loss-scroll">
-    <div id="loss-inner" style="height:220px">
-      <canvas id="loss-chart" role="img" aria-label="3ペア推定含み損グラフ"></canvas>
-    </div>
+  <div id="loss-inner" style="position:relative;height:240px">
+    <canvas id="loss-chart" role="img" aria-label="3ペア推定含み損積み上げグラフ"></canvas>
   </div>
 </section>
 
@@ -421,16 +414,14 @@ function rebuild() {{
 document.querySelector('.charts-inner-wrap').style.width = CANVAS_W + 'px';
 rebuild();
 
-// ── 含み損グラフ ──────────────────────────────────────
+// ── 含み損グラフ（3ペア積み上げ棒グラフ）────────────────
 const LOSS_WEEKS = {loss_weeks_json};
 const LOSS_DATA  = {loss_data_json};
-const LOSS_PX_PER_WEEK = 16;
-const LOSS_W = LOSS_WEEKS.length * LOSS_PX_PER_WEEK;
 
 const LOSS_COLORS = [
-  {{pair: Object.keys(LOSS_DATA)[0], color:'#185FA5', bg:'rgba(24,95,165,0.15)'}},
-  {{pair: Object.keys(LOSS_DATA)[1], color:'#D85A30', bg:'rgba(216,90,48,0.15)'}},
-  {{pair: Object.keys(LOSS_DATA)[2], color:'#3B6D11', bg:'rgba(59,109,17,0.15)'}},
+  {{pair: Object.keys(LOSS_DATA)[0], color:'#185FA5'}},
+  {{pair: Object.keys(LOSS_DATA)[1], color:'#D85A30'}},
+  {{pair: Object.keys(LOSS_DATA)[2], color:'#3B6D11'}},
 ];
 
 const lossLabels = LOSS_WEEKS.map(w => {{
@@ -443,28 +434,21 @@ let lossChart = null;
 function buildLossChart() {{
   if (lossChart) lossChart.destroy();
   const el = document.getElementById('loss-chart');
-  el.width  = LOSS_W;
-  el.height = 220;
-  document.getElementById('loss-inner').style.width = LOSS_W + 'px';
-  document.getElementById('loss-scroll').style.overflowX = 'auto';
 
   const datasets = LOSS_COLORS.map(c => ({{
     label: c.pair.split('-')[2] || c.pair,
     data: LOSS_DATA[c.pair],
-    borderColor: c.color,
-    backgroundColor: c.bg,
-    borderWidth: 1.5,
-    pointRadius: 0,
-    fill: true,
-    tension: 0.3,
+    backgroundColor: c.color,
+    borderWidth: 0,
+    stack: 'stack',
   }}));
 
   lossChart = new Chart(el, {{
-    type: 'line',
+    type: 'bar',
     data: {{labels: lossLabels, datasets}},
     plugins: [vertLinesPlugin],
     options: {{
-      responsive: false,
+      responsive: true,
       maintainAspectRatio: false,
       plugins: {{
         legend: {{
@@ -475,16 +459,21 @@ function buildLossChart() {{
         tooltip: {{
           callbacks: {{
             title: items => LOSS_WEEKS[items[0].dataIndex] + ' 週',
-            label: item => item.dataset.label + ': ' + item.raw.toLocaleString() + '円',
+            label: item => item.dataset.label + ': ' + Math.round(item.raw).toLocaleString() + '円',
+            footer: items => '合計: ' + Math.round(items.reduce((s,i)=>s+i.raw,0)).toLocaleString() + '円',
           }}
         }}
       }},
       scales: {{
         x: {{
+          stacked: true,
           ticks: {{font:{{size:9}},color:'#aaa',autoSkip:false,maxRotation:0}},
           grid: {{display:false}},
+          barPercentage: 0.85,
+          categoryPercentage: 1.0,
         }},
         y: {{
+          stacked: true,
           ticks: {{
             font:{{size:10}},color:'#999',maxTicksLimit:5,
             callback: v => (v>=10000 ? Math.round(v/1000)+'K' : v) + '円',
@@ -498,25 +487,6 @@ function buildLossChart() {{
 }}
 
 buildLossChart();
-document.getElementById('lossUnify').addEventListener('change', buildLossChart);
-
-(function() {{
-  const ncEl = document.getElementById('nc-scroll');
-  const lossEl = document.getElementById('loss-scroll');
-  let syncing = false;
-  ncEl.addEventListener('scroll', () => {{
-    if (syncing) return;
-    syncing = true;
-    lossEl.scrollLeft = ncEl.scrollLeft;
-    syncing = false;
-  }});
-  lossEl.addEventListener('scroll', () => {{
-    if (syncing) return;
-    syncing = true;
-    ncEl.scrollLeft = lossEl.scrollLeft;
-    syncing = false;
-  }});
-}})();
 
 ['showNC1','showNC2','showNC3','showNC4','unifyY'].forEach(id => {{
   document.getElementById(id).addEventListener('change', rebuild);
