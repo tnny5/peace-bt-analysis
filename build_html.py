@@ -464,11 +464,10 @@ for ACCOUNT in targets:
     const LOSS_WEEKS = {loss_weeks_json};
     const LOSS_DATA  = {loss_data_json};
 
-    const LOSS_COLORS = [
-      {{pair: Object.keys(LOSS_DATA)[0], color:'#185FA5'}},
-      {{pair: Object.keys(LOSS_DATA)[1], color:'#D85A30'}},
-      {{pair: Object.keys(LOSS_DATA)[2], color:'#3B6D11'}},
-    ];
+    const _LOSS_PALETTE = ['#185FA5','#D85A30','#3B6D11','#8B4CA8','#B8860B'];
+    const LOSS_COLORS = Object.keys(LOSS_DATA).map((pair, i) => ({{
+      pair, color: _LOSS_PALETTE[i % _LOSS_PALETTE.length]
+    }}));
 
     const lossLabels = LOSS_WEEKS.map(w => {{
       const [y,mo,d] = w.split('-');
