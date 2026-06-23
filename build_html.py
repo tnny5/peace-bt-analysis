@@ -20,28 +20,116 @@ if not all_data:
     print("JSONが見つかりません")
     raise SystemExit(1)
 
-# ── 2. グラフ用月次集計データを生成 ─────────────────────
+# ── 2. グラフ用集計データを生成 ─────────────────────────
 from collections import defaultdict
+from datetime import date, timedelta
+
+# 仮想含み損計算用：固定レート（注釈に明示）
+# USDJPY=150円固定、GBPJPY≈190円、CHFJPY≈167円（=150/0.90）
+PIP_SIZE = 0.0001          # 全ペア共通（JPY系でないため）
+CONTRACT = 100_000         # 1ロット = 100,000通貨
+
+PAIR_JPY_PER_LOT_PER_PIP = {
+    'EURUSD': PIP_SIZE * CONTRACT * 150,        # USD建て → ×150
+    'EURGBP': PIP_SIZE * CONTRACT * 190,        # GBP建て → GBPJPY≈190
+    'USDCHF': PIP_SIZE * CONTRACT * 150 / 0.90, # CHF建て → CHFJPY≈167
+}
+RATE_NOTE = 'USDJPY=150 / GBPJPY=190 / CHFJPY=167（固定近似）'
+
+def get_monday(date_str):
+    d = date.fromisoformat(date_str[:10])
+    return (d - timedelta(days=d.weekday())).isoformat()
 
 def weekly_nc(groups):
+    """各週にオープン中だったグループ件数をNC別に集計（案A: リスク在中期間ベース）"""
     from datetime import date, timedelta
-    m = defaultdict(lambda: {1:0,2:0,3:0,4:0})
+
+    opens  = [date.fromisoformat(g['open_dt'][:10]) for g in groups]
+    closes = [date.fromisoformat(g['close_dt'][:10]) for g in groups if g['close_dt']]
+    if not opens:
+        return {}
+
+    # 全期間の月曜日リストを生成
+    period_start = min(opens) - timedelta(days=min(opens).weekday())
+    period_end   = max(closes) if closes else max(opens)
+    all_weeks = {}
+    cur = period_start
+    while cur <= period_end:
+        all_weeks[cur.isoformat()] = {1:0, 2:0, 3:0, 4:0}
+        cur += timedelta(days=7)
+
     for g in groups:
-        if not g['close_dt']:
+        open_d  = date.fromisoformat(g['open_dt'][:10])
+        close_d = date.fromisoformat(g['close_dt'][:10]) if g['close_dt'] else period_end
+        nc_key  = min(g['nc'], 4)
+        # open週の月曜日からclose週まで、各週に1カウント加算
+        mon = open_d - timedelta(days=open_d.weekday())
+        while mon <= close_d:
+            key = mon.isoformat()
+            if key in all_weeks:
+                all_weeks[key][nc_key] += 1
+            mon += timedelta(days=7)
+
+    return dict(sorted(all_weeks.items()))
+
+
+def weekly_max_loss(groups, pair):
+    """各週のナンピン積み上がり時点での推定最大含み損（円）を集計
+
+    各ナンピンステップN入った瞬間、直前ステップ0〜N-1の含み損を計算し
+    その週の最大値を記録する。実際の最悪点（ステップ間）より小さい可能性があるため
+    下限値（少なくともこれだけの含み損があったと推定できる値）として扱う。
+    """
+    jpy_per_lot_per_pip = PAIR_JPY_PER_LOT_PER_PIP.get(pair, PIP_SIZE * CONTRACT * 150)
+    weekly = {}
+
+    for g in groups:
+        entries = g['entries']
+        if len(entries) < 2:
             continue
-        dt  = date.fromisoformat(g['close_dt'][:10])
-        mon = dt - timedelta(days=dt.weekday())   # その週の月曜日
-        key = mon.isoformat()
-        nc_key = min(g['nc'], 4)
-        m[key][nc_key] += 1
-    return dict(sorted(m.items()))
+        pos_dir = g['pos_dir']
+
+        for n in range(1, len(entries)):
+            step_n  = entries[n]
+            price_n = step_n['price']
+            week    = get_monday(step_n['dt'])
+
+            total_loss = 0.0
+            for i in range(n):
+                price_i = entries[i]['price']
+                lot_i   = entries[i]['lot']
+                # LONGはprice下落が損失、SHORTはprice上昇が損失
+                diff = (price_i - price_n) if pos_dir == 'long' else (price_n - price_i)
+                pips = diff / PIP_SIZE
+                total_loss += lot_i * pips * jpy_per_lot_per_pip
+
+            if total_loss > 0:
+                weekly[week] = max(weekly.get(week, 0.0), total_loss)
+
+    return dict(sorted(weekly.items()))
+
 
 chart_data = {}
-for d in all_data:
-    pair = d['meta']['bt_name']
-    chart_data[pair] = weekly_nc(d['normal'])
+loss_data  = {}
+all_weeks_set = set()
 
-chart_json = json.dumps(chart_data, ensure_ascii=False, separators=(',',':'))
+for d in all_data:
+    key  = d['meta']['bt_name']
+    pair = key.split('-')[2] if '-' in key else key
+    chart_data[key] = weekly_nc(d['normal'])
+    loss_data[key]  = weekly_max_loss(d['normal'], pair)
+    all_weeks_set.update(loss_data[key].keys())
+
+# 全ペア共通の週リスト（損失グラフ用）
+all_loss_weeks = sorted(all_weeks_set)
+# 各ペアのデータを共通週リストに整列（値なしは0）
+loss_series = {}
+for key in loss_data:
+    loss_series[key] = [round(loss_data[key].get(w, 0)) for w in all_loss_weeks]
+
+chart_json      = json.dumps(chart_data,    ensure_ascii=False, separators=(',',':'))
+loss_weeks_json = json.dumps(all_loss_weeks, ensure_ascii=False, separators=(',',':'))
+loss_data_json  = json.dumps(loss_series,   ensure_ascii=False, separators=(',',':'))
 
 # ── 3. メタ情報テーブルHTML ─────────────────────────────
 PARAM_LABELS = {
@@ -110,7 +198,7 @@ canvases_html = f"""
 <div class="charts-labels">
   {chart_labels_html}
 </div>
-<div class="charts-scroll">
+<div class="charts-scroll" id="nc-scroll">
   <div class="charts-inner-wrap">
     {chart_canvases_html}
   </div>
@@ -170,7 +258,7 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
 </section>
 
 <section>
-  <h2>週次NC分布（クローズ週基準）</h2>
+  <h2>週次オープン中ポジション数（リスク在中ベース）</h2>
   <div class="toolbar">
     <span>表示:</span>
     <label><input type="checkbox" id="showNC1" checked> NC=1</label>
@@ -179,7 +267,7 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
     <label><input type="checkbox" id="showNC4" checked> NC=4+</label>
     <div class="sep"></div>
     <label><input type="checkbox" id="unifyY"> Y軸を統一</label>
-    <span class="y-note">Y軸 = その週にクローズしたグループ件数</span>
+    <span class="y-note">Y軸 = その週に保有中だったグループ件数（色はそのグループの最終NC段数）</span>
   </div>
   <div class="legend">
     <span><b style="background:#639922"></b>NC=1（ナンピンなし）</span>
@@ -188,6 +276,23 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
     <span><b style="background:#A32D2D"></b>NC=4+</span>
   </div>
   {canvases_html}
+</section>
+
+<section>
+  <h2>週次 推定最大含み損（円）</h2>
+  <p style="font-size:12px;color:#888;margin-bottom:12px">
+    各ナンピンステップが入った瞬間の含み損を実約定価格から計算。
+    ステップ間の最悪点は含まないため<strong>下限推定値</strong>。
+    レート固定近似：{RATE_NOTE}
+  </p>
+  <div class="toolbar" style="margin-bottom:10px">
+    <label style="font-size:13px;color:#555"><input type="checkbox" id="lossUnify" checked> Y軸を統一（3ペア比較）</label>
+  </div>
+  <div class="charts-scroll" id="loss-scroll">
+    <div id="loss-inner" style="height:220px">
+      <canvas id="loss-chart" role="img" aria-label="3ペア推定含み損グラフ"></canvas>
+    </div>
+  </div>
 </section>
 
 </main>
@@ -287,7 +392,7 @@ function rebuild() {{
           legend: {{display: false}},
           tooltip: {{
             callbacks: {{
-              title: items => weeks[items[0].dataIndex] + ' 週',
+              title: items => weeks[items[0].dataIndex] + ' 週（保有中）',
               label: item => item.dataset.label + ': ' + item.raw + '件',
             }}
           }}
@@ -315,6 +420,103 @@ function rebuild() {{
 
 document.querySelector('.charts-inner-wrap').style.width = CANVAS_W + 'px';
 rebuild();
+
+// ── 含み損グラフ ──────────────────────────────────────
+const LOSS_WEEKS = {loss_weeks_json};
+const LOSS_DATA  = {loss_data_json};
+const LOSS_PX_PER_WEEK = 16;
+const LOSS_W = LOSS_WEEKS.length * LOSS_PX_PER_WEEK;
+
+const LOSS_COLORS = [
+  {{pair: Object.keys(LOSS_DATA)[0], color:'#185FA5', bg:'rgba(24,95,165,0.15)'}},
+  {{pair: Object.keys(LOSS_DATA)[1], color:'#D85A30', bg:'rgba(216,90,48,0.15)'}},
+  {{pair: Object.keys(LOSS_DATA)[2], color:'#3B6D11', bg:'rgba(59,109,17,0.15)'}},
+];
+
+const lossLabels = LOSS_WEEKS.map(w => {{
+  const [y,mo,d] = w.split('-');
+  return parseInt(d) <= 7 ? (mo==='01' ? y : mo) : '';
+}});
+
+let lossChart = null;
+
+function buildLossChart() {{
+  if (lossChart) lossChart.destroy();
+  const el = document.getElementById('loss-chart');
+  el.width  = LOSS_W;
+  el.height = 220;
+  document.getElementById('loss-inner').style.width = LOSS_W + 'px';
+  document.getElementById('loss-scroll').style.overflowX = 'auto';
+
+  const datasets = LOSS_COLORS.map(c => ({{
+    label: c.pair.split('-')[2] || c.pair,
+    data: LOSS_DATA[c.pair],
+    borderColor: c.color,
+    backgroundColor: c.bg,
+    borderWidth: 1.5,
+    pointRadius: 0,
+    fill: true,
+    tension: 0.3,
+  }}));
+
+  lossChart = new Chart(el, {{
+    type: 'line',
+    data: {{labels: lossLabels, datasets}},
+    plugins: [vertLinesPlugin],
+    options: {{
+      responsive: false,
+      maintainAspectRatio: false,
+      plugins: {{
+        legend: {{
+          display: true,
+          position: 'top',
+          labels: {{font:{{size:12}}, boxWidth:12, padding:16}},
+        }},
+        tooltip: {{
+          callbacks: {{
+            title: items => LOSS_WEEKS[items[0].dataIndex] + ' 週',
+            label: item => item.dataset.label + ': ' + item.raw.toLocaleString() + '円',
+          }}
+        }}
+      }},
+      scales: {{
+        x: {{
+          ticks: {{font:{{size:9}},color:'#aaa',autoSkip:false,maxRotation:0}},
+          grid: {{display:false}},
+        }},
+        y: {{
+          ticks: {{
+            font:{{size:10}},color:'#999',maxTicksLimit:5,
+            callback: v => (v>=10000 ? Math.round(v/1000)+'K' : v) + '円',
+          }},
+          grid: {{color:'rgba(0,0,0,0.06)'}},
+        }},
+      }},
+      animation: false,
+    }}
+  }});
+}}
+
+buildLossChart();
+document.getElementById('lossUnify').addEventListener('change', buildLossChart);
+
+(function() {{
+  const ncEl = document.getElementById('nc-scroll');
+  const lossEl = document.getElementById('loss-scroll');
+  let syncing = false;
+  ncEl.addEventListener('scroll', () => {{
+    if (syncing) return;
+    syncing = true;
+    lossEl.scrollLeft = ncEl.scrollLeft;
+    syncing = false;
+  }});
+  lossEl.addEventListener('scroll', () => {{
+    if (syncing) return;
+    syncing = true;
+    ncEl.scrollLeft = lossEl.scrollLeft;
+    syncing = false;
+  }});
+}})();
 
 ['showNC1','showNC2','showNC3','showNC4','unifyY'].forEach(id => {{
   document.getElementById(id).addEventListener('change', rebuild);
