@@ -60,19 +60,19 @@ def weekly_nc(groups):
     all_weeks = {}
     cur = period_start
     while cur <= period_end:
-        all_weeks[cur.isoformat()] = {1:0, 2:0, 3:0, 4:0}
+        all_weeks[cur.isoformat()] = {1:0, 2:0, 3:0, 4:0, 5:0, 6:0}
         cur += timedelta(days=7)
 
     for g in groups:
         open_d  = date.fromisoformat(g['open_dt'][:10])
         close_d = date.fromisoformat(g['close_dt'][:10]) if g['close_dt'] else period_end
         nc      = g['nc']
-        nc_key  = min(nc, 4)
+        nc_key  = min(nc, 6)  # nc=1(NC=0)〜nc=5(NC=4)を個別、nc>=6(NC=5+)をまとめ
         mon = open_d - timedelta(days=open_d.weekday())
         while mon <= close_d:
             key = mon.isoformat()
             if key in all_weeks:
-                all_weeks[key][nc_key] += nc  # グループ件数ではなくポジション数を加算
+                all_weeks[key][nc_key] += nc
             mon += timedelta(days=7)
 
     return dict(sorted(all_weeks.items()))
@@ -266,16 +266,20 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
     <label><input type="checkbox" id="showNC1" checked> NC=0</label>
     <label><input type="checkbox" id="showNC2" checked> NC=1</label>
     <label><input type="checkbox" id="showNC3" checked> NC=2</label>
-    <label><input type="checkbox" id="showNC4" checked> NC=3+</label>
+    <label><input type="checkbox" id="showNC4" checked> NC=3</label>
+    <label><input type="checkbox" id="showNC5" checked> NC=4</label>
+    <label><input type="checkbox" id="showNC6" checked> NC=5+</label>
     <div class="sep"></div>
     <label><input type="checkbox" id="unifyY"> Y軸を統一</label>
     <span class="y-note">Y軸 = その週に保有中だったポジション数（色はそのグループのナンピン段数、NC=ナンピン回数で0始まり）</span>
   </div>
   <div class="legend">
-    <span><b style="background:#5A9E22"></b>NC=0（ナンピンなし）</span>
-    <span><b style="background:#D4A017"></b>NC=1</span>
-    <span><b style="background:#D85A30"></b>NC=2</span>
-    <span><b style="background:#A32D2D"></b>NC=3+</span>
+    <span><b style="background:#5A9E22"></b>NC=0</span>
+    <span><b style="background:#A8C43A"></b>NC=1</span>
+    <span><b style="background:#D4A017"></b>NC=2</span>
+    <span><b style="background:#E07B20"></b>NC=3</span>
+    <span><b style="background:#D85A30"></b>NC=4</span>
+    <span><b style="background:#A32D2D"></b>NC=5+（警戒）</span>
   </div>
   {canvases_html}
 </section>
@@ -298,8 +302,8 @@ footer{{text-align:center;font-size:11px;color:#aaa;padding:24px;border-top:1px 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
 <script>
 const RAW = {chart_json};
-const COLORS = {{1:'#5A9E22',2:'#D4A017',3:'#D85A30',4:'#A32D2D'}};
-const NC_LABELS = {{1:'NC=0',2:'NC=1',3:'NC=2',4:'NC=3+'}};
+const COLORS = {{1:'#5A9E22',2:'#A8C43A',3:'#D4A017',4:'#E07B20',5:'#D85A30',6:'#A32D2D'}};
+const NC_LABELS = {{1:'NC=0',2:'NC=1',3:'NC=2',4:'NC=3',5:'NC=4',6:'NC=5+'}};
 const PAIRS = Object.keys(RAW);
 const weeks = Object.keys(RAW[PAIRS[0]]);
 
@@ -344,7 +348,7 @@ function calcYMax(show) {{
   return Math.max(...PAIRS.map(pair =>
     Math.max(...weeks.map(w => {{
       const d = RAW[pair][w] || {{}};
-      return [1,2,3,4].filter(nc => show[nc]).reduce((s,nc) => s+(d[nc]||0), 0);
+      return [1,2,3,4,5,6].filter(nc => show[nc]).reduce((s,nc) => s+(d[nc]||0), 0);
     }}))
   ));
 }}
@@ -357,6 +361,8 @@ function rebuild() {{
     2: document.getElementById('showNC2').checked,
     3: document.getElementById('showNC3').checked,
     4: document.getElementById('showNC4').checked,
+    5: document.getElementById('showNC5').checked,
+    6: document.getElementById('showNC6').checked,
   }};
   const unify = document.getElementById('unifyY').checked;
   const yMax  = unify ? calcYMax(show) : undefined;
@@ -365,7 +371,7 @@ function rebuild() {{
     const el = document.getElementById('c'+(idx+1));
     if (!el) return;
     const d = RAW[pair];
-    const datasets = [1,2,3,4].filter(nc => show[nc]).map(nc => ({{
+    const datasets = [1,2,3,4,5,6].filter(nc => show[nc]).map(nc => ({{
       label: NC_LABELS[nc],
       data: weeks.map(w => d[w] ? (d[w][nc]||0) : 0),
       backgroundColor: COLORS[nc],
@@ -485,7 +491,7 @@ function buildLossChart() {{
 
 buildLossChart();
 
-['showNC1','showNC2','showNC3','showNC4','unifyY'].forEach(id => {{
+['showNC1','showNC2','showNC3','showNC4','showNC5','showNC6','unifyY'].forEach(id => {{
   document.getElementById(id).addEventListener('change', rebuild);
 }});
 </script>
