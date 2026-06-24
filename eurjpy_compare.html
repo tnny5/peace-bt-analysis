@@ -167,16 +167,24 @@
       <h2>週次 推定最大含み損（円）</h2>
       <p style="font-size:12px;color:#888;margin-bottom:12px">
         NC+1が発動するとしたら想定される価格（実約定価格±NanpinPips）での保有ポジション合計含み損。
-        実際のDDより大きくなる傾向の<strong>保守的上限推計</strong>。3ペアの積み上げ表示。
+        実際のDDより大きくなる傾向の<strong>保守的上限推計</strong>。
         レート固定近似：USDJPY=150 / GBPJPY=190 / CHFJPY=167 / JPY系は1pip=直接円（固定近似）
       </p>
+      <div class="toolbar" id="loss-toolbar">
+        <span>表示:</span>
+        <span id="loss-checkboxes"></span>
+        <div class="sep"></div>
+        <span>グラフ:</span>
+        <label><input type="radio" name="lossMode" value="bar" checked> 積み上げ棒</label>
+        <label><input type="radio" name="lossMode" value="line"> 重ね線</label>
+      </div>
       <div id="loss-inner" style="position:relative;height:240px">
-        <canvas id="loss-chart" role="img" aria-label="3ペア推定含み損積み上げグラフ"></canvas>
+        <canvas id="loss-chart" role="img" aria-label="推定含み損グラフ"></canvas>
       </div>
     </section>
 
     </main>
-    <footer>生成: 2026-06-24 12:45 — build_html.py</footer>
+    <footer>生成: 2026-06-24 13:04 — build_html.py</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
     <script>
@@ -310,22 +318,59 @@
       return parseInt(d) <= 7 ? (mo==='01' ? y : mo) : '';
     });
 
+    // ── 損失グラフ チェックボックス動的生成 ───────────────
+    const lossCbContainer = document.getElementById('loss-checkboxes');
+    LOSS_COLORS.forEach(c => {
+      const label = c.pair.split('-')[2] || c.pair;
+      const id = 'lossCb_' + c.pair.replace(/[^a-zA-Z0-9]/g,'_');
+      const el = document.createElement('label');
+      el.style.cssText = 'display:inline-flex;align-items:center;gap:4px;margin-right:12px;cursor:pointer';
+      el.innerHTML = `<input type="checkbox" id="${id}" checked>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${c.color}"></span>
+        ${label}`;
+      lossCbContainer.appendChild(el);
+    });
+
     let lossChart = null;
 
     function buildLossChart() {
       if (lossChart) lossChart.destroy();
       const el = document.getElementById('loss-chart');
+      const mode = document.querySelector('input[name="lossMode"]:checked').value;
+      const isLine = mode === 'line';
 
-      const datasets = LOSS_COLORS.map(c => ({
-        label: c.pair.split('-')[2] || c.pair,
-        data: LOSS_DATA[c.pair],
-        backgroundColor: c.color,
-        borderWidth: 0,
-        stack: 'stack',
-      }));
+      const activeColors = LOSS_COLORS.filter(c => {
+        const id = 'lossCb_' + c.pair.replace(/[^a-zA-Z0-9]/g,'_');
+        const cb = document.getElementById(id);
+        return cb ? cb.checked : true;
+      });
+
+      const datasets = activeColors.map(c => {
+        const label = c.pair.split('-')[2] || c.pair;
+        if (isLine) {
+          return {
+            label,
+            data: LOSS_DATA[c.pair],
+            borderColor: c.color,
+            backgroundColor: c.color + '33',
+            borderWidth: 2,
+            pointRadius: 1,
+            tension: 0.3,
+            fill: false,
+          };
+        } else {
+          return {
+            label,
+            data: LOSS_DATA[c.pair],
+            backgroundColor: c.color,
+            borderWidth: 0,
+            stack: 'stack',
+          };
+        }
+      });
 
       lossChart = new Chart(el, {
-        type: 'bar',
+        type: isLine ? 'line' : 'bar',
         data: {labels: lossLabels, datasets},
         plugins: [vertLinesPlugin],
         options: {
@@ -341,20 +386,20 @@
               callbacks: {
                 title: items => LOSS_WEEKS[items[0].dataIndex] + ' 週',
                 label: item => item.dataset.label + ': ' + Math.round(item.raw).toLocaleString() + '円',
-                footer: items => '合計: ' + Math.round(items.reduce((s,i)=>s+i.raw,0)).toLocaleString() + '円',
+                footer: isLine ? undefined : items => '合計: ' + Math.round(items.reduce((s,i)=>s+i.raw,0)).toLocaleString() + '円',
               }
             }
           },
           scales: {
             x: {
-              stacked: true,
+              stacked: !isLine,
               ticks: {font:{size:9},color:'#aaa',autoSkip:false,maxRotation:0},
               grid: {display:false},
               barPercentage: 0.85,
               categoryPercentage: 1.0,
             },
             y: {
-              stacked: true,
+              stacked: !isLine,
               ticks: {
                 font:{size:10},color:'#999',maxTicksLimit:5,
                 callback: v => (v>=10000 ? Math.round(v/1000)+'K' : v) + '円',
@@ -368,6 +413,11 @@
     }
 
     buildLossChart();
+
+    // 損失グラフのチェックボックス・ラジオボタンにイベント登録
+    document.querySelectorAll('#loss-checkboxes input, input[name="lossMode"]').forEach(el => {
+      el.addEventListener('change', buildLossChart);
+    });
 
     ['showNC1','showNC2','showNC3','showNC4','showNC5','showNC6','unifyY'].forEach(id => {
       document.getElementById(id).addEventListener('change', rebuild);

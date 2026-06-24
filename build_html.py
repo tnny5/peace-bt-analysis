@@ -25,6 +25,19 @@ ACCOUNT_CONFIG = {
         'title': '口座C',
         'pairs': ['AUDUSD', 'EURJPY'],
     },
+    'EJ': {
+        'out':   BASE / 'eurjpy_compare.html',
+        'title': 'EURJPY パターン比較',
+        'jsons': [
+            'BT-OFF-EURJPY-2023-2025_groups.json',
+            'BT-EJ-P1_groups.json',
+            'BT-EJ-P2_groups.json',
+            'BT-EJ-P3_groups.json',
+            'BT-EJ-P4_groups.json',
+            'BT-EJ-P5_groups.json',
+            'BT-EJ-P6_groups.json',
+        ],
+    },
 }
 
 # どの口座を生成するか
@@ -132,22 +145,28 @@ for ACCOUNT in targets:
     cfg  = ACCOUNT_CONFIG[ACCOUNT]
     OUT  = cfg['out']
     ACCT_TITLE = cfg['title']
-    PAIRS_ORDER = cfg['pairs']
+    PAIRS_ORDER = cfg.get('pairs', [])
 
-    # ── 1. JSONをロード（この口座の対象ペアのみ）──────────────
+    # ── 1. JSONをロード ────────────────────────────────────────
     all_data = []
-    for pair in PAIRS_ORDER:
-        matches = sorted(BASE.glob(f"*-{pair}-*_groups.json"))
-        if not matches:
-            print(f"  [SKIP] {pair}: JSONなし")
-            continue
-        p = matches[-1]  # 最新を使用
-        d = json.load(open(p, encoding='utf-8'))
-        if d['meta'].get('account') == ACCOUNT:
+    if 'jsons' in cfg:
+        # ファイル名直指定モード（パターン比較など）
+        for fname in cfg['jsons']:
+            p = BASE / fname
+            if not p.exists():
+                print(f"  [SKIP] {fname}: ファイルなし")
+                continue
+            d = json.load(open(p, encoding='utf-8'))
             all_data.append(d)
             print(f"  読込: {p.name}  ({len(d['normal'])}グループ)")
-        else:
-            # account指定なくてもペアが合えば使う
+    else:
+        for pair in PAIRS_ORDER:
+            matches = sorted(BASE.glob(f"*-{pair}-*_groups.json"))
+            if not matches:
+                print(f"  [SKIP] {pair}: JSONなし")
+                continue
+            p = matches[-1]  # 最新を使用
+            d = json.load(open(p, encoding='utf-8'))
             all_data.append(d)
             print(f"  読込: {p.name}  ({len(d['normal'])}グループ)")
 
@@ -331,11 +350,19 @@ for ACCOUNT in targets:
       <h2>週次 推定最大含み損（円）</h2>
       <p style="font-size:12px;color:#888;margin-bottom:12px">
         NC+1が発動するとしたら想定される価格（実約定価格±NanpinPips）での保有ポジション合計含み損。
-        実際のDDより大きくなる傾向の<strong>保守的上限推計</strong>。3ペアの積み上げ表示。
+        実際のDDより大きくなる傾向の<strong>保守的上限推計</strong>。
         レート固定近似：{RATE_NOTE}
       </p>
+      <div class="toolbar" id="loss-toolbar">
+        <span>表示:</span>
+        <span id="loss-checkboxes"></span>
+        <div class="sep"></div>
+        <span>グラフ:</span>
+        <label><input type="radio" name="lossMode" value="bar" checked> 積み上げ棒</label>
+        <label><input type="radio" name="lossMode" value="line"> 重ね線</label>
+      </div>
       <div id="loss-inner" style="position:relative;height:240px">
-        <canvas id="loss-chart" role="img" aria-label="3ペア推定含み損積み上げグラフ"></canvas>
+        <canvas id="loss-chart" role="img" aria-label="推定含み損グラフ"></canvas>
       </div>
     </section>
 
@@ -474,22 +501,59 @@ for ACCOUNT in targets:
       return parseInt(d) <= 7 ? (mo==='01' ? y : mo) : '';
     }});
 
+    // ── 損失グラフ チェックボックス動的生成 ───────────────
+    const lossCbContainer = document.getElementById('loss-checkboxes');
+    LOSS_COLORS.forEach(c => {{
+      const label = c.pair.split('-')[2] || c.pair;
+      const id = 'lossCb_' + c.pair.replace(/[^a-zA-Z0-9]/g,'_');
+      const el = document.createElement('label');
+      el.style.cssText = 'display:inline-flex;align-items:center;gap:4px;margin-right:12px;cursor:pointer';
+      el.innerHTML = `<input type="checkbox" id="${{id}}" checked>
+        <span style="display:inline-block;width:10px;height:10px;border-radius:2px;background:${{c.color}}"></span>
+        ${{label}}`;
+      lossCbContainer.appendChild(el);
+    }});
+
     let lossChart = null;
 
     function buildLossChart() {{
       if (lossChart) lossChart.destroy();
       const el = document.getElementById('loss-chart');
+      const mode = document.querySelector('input[name="lossMode"]:checked').value;
+      const isLine = mode === 'line';
 
-      const datasets = LOSS_COLORS.map(c => ({{
-        label: c.pair.split('-')[2] || c.pair,
-        data: LOSS_DATA[c.pair],
-        backgroundColor: c.color,
-        borderWidth: 0,
-        stack: 'stack',
-      }}));
+      const activeColors = LOSS_COLORS.filter(c => {{
+        const id = 'lossCb_' + c.pair.replace(/[^a-zA-Z0-9]/g,'_');
+        const cb = document.getElementById(id);
+        return cb ? cb.checked : true;
+      }});
+
+      const datasets = activeColors.map(c => {{
+        const label = c.pair.split('-')[2] || c.pair;
+        if (isLine) {{
+          return {{
+            label,
+            data: LOSS_DATA[c.pair],
+            borderColor: c.color,
+            backgroundColor: c.color + '33',
+            borderWidth: 2,
+            pointRadius: 1,
+            tension: 0.3,
+            fill: false,
+          }};
+        }} else {{
+          return {{
+            label,
+            data: LOSS_DATA[c.pair],
+            backgroundColor: c.color,
+            borderWidth: 0,
+            stack: 'stack',
+          }};
+        }}
+      }});
 
       lossChart = new Chart(el, {{
-        type: 'bar',
+        type: isLine ? 'line' : 'bar',
         data: {{labels: lossLabels, datasets}},
         plugins: [vertLinesPlugin],
         options: {{
@@ -505,20 +569,20 @@ for ACCOUNT in targets:
               callbacks: {{
                 title: items => LOSS_WEEKS[items[0].dataIndex] + ' 週',
                 label: item => item.dataset.label + ': ' + Math.round(item.raw).toLocaleString() + '円',
-                footer: items => '合計: ' + Math.round(items.reduce((s,i)=>s+i.raw,0)).toLocaleString() + '円',
+                footer: isLine ? undefined : items => '合計: ' + Math.round(items.reduce((s,i)=>s+i.raw,0)).toLocaleString() + '円',
               }}
             }}
           }},
           scales: {{
             x: {{
-              stacked: true,
+              stacked: !isLine,
               ticks: {{font:{{size:9}},color:'#aaa',autoSkip:false,maxRotation:0}},
               grid: {{display:false}},
               barPercentage: 0.85,
               categoryPercentage: 1.0,
             }},
             y: {{
-              stacked: true,
+              stacked: !isLine,
               ticks: {{
                 font:{{size:10}},color:'#999',maxTicksLimit:5,
                 callback: v => (v>=10000 ? Math.round(v/1000)+'K' : v) + '円',
@@ -532,6 +596,11 @@ for ACCOUNT in targets:
     }}
 
     buildLossChart();
+
+    // 損失グラフのチェックボックス・ラジオボタンにイベント登録
+    document.querySelectorAll('#loss-checkboxes input, input[name="lossMode"]').forEach(el => {{
+      el.addEventListener('change', buildLossChart);
+    }});
 
     ['showNC1','showNC2','showNC3','showNC4','showNC5','showNC6','unifyY'].forEach(id => {{
       document.getElementById(id).addEventListener('change', rebuild);
