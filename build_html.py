@@ -180,7 +180,10 @@ for ACCOUNT in targets:
 
     for d in all_data:
         key  = d['meta']['bt_name']
-        pair = key.split('-')[2] if '-' in key else key
+        # ペア名: metaに明示されていればそちらを優先、なければbt_nameから推定
+        pair = d['meta'].get('pair') or next(
+            (p for p in PAIR_JPY_PER_LOT_PER_PIP if p in key.upper()), 'EURUSD'
+        )
         chart_data[key] = weekly_nc(d['normal'])
         loss_data[key]  = weekly_max_loss(d['normal'], pair, d['meta'])
         all_weeks_set.update(loss_data[key].keys())
