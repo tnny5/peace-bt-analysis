@@ -195,9 +195,16 @@ for ACCOUNT in targets:
     for key in loss_data:
         loss_series[key] = [round(loss_data[key].get(w, 0)) for w in all_loss_weeks]
 
-    chart_json      = json.dumps(chart_data,    ensure_ascii=False, separators=(',',':'))
-    loss_weeks_json = json.dumps(all_loss_weeks, ensure_ascii=False, separators=(',',':'))
-    loss_data_json  = json.dumps(loss_series,   ensure_ascii=False, separators=(',',':'))
+    # bt_name → 表示ラベル（source があれば使用、なければ bt_name 末尾）
+    loss_labels_map = {
+        d['meta']['bt_name']: d['meta'].get('source') or d['meta']['bt_name'].split('-')[-1]
+        for d in all_data
+    }
+
+    chart_json       = json.dumps(chart_data,    ensure_ascii=False, separators=(',',':'))
+    loss_weeks_json  = json.dumps(all_loss_weeks, ensure_ascii=False, separators=(',',':'))
+    loss_data_json   = json.dumps(loss_series,   ensure_ascii=False, separators=(',',':'))
+    loss_labels_json = json.dumps(loss_labels_map, ensure_ascii=False, separators=(',',':'))
 
     # ── 3. メタ情報テーブルHTML ─────────────────────────────
     PARAM_LABELS = {
@@ -491,12 +498,13 @@ for ACCOUNT in targets:
     rebuild();
 
     // ── 含み損グラフ（3ペア積み上げ棒グラフ）────────────────
-    const LOSS_WEEKS = {loss_weeks_json};
-    const LOSS_DATA  = {loss_data_json};
+    const LOSS_WEEKS  = {loss_weeks_json};
+    const LOSS_DATA   = {loss_data_json};
+    const LOSS_LABELS = {loss_labels_json};
 
     const _LOSS_PALETTE = ['#185FA5','#D85A30','#3B6D11','#8B4CA8','#B8860B'];
     const LOSS_COLORS = Object.keys(LOSS_DATA).map((pair, i) => ({{
-      pair, color: _LOSS_PALETTE[i % _LOSS_PALETTE.length]
+      pair, label: LOSS_LABELS[pair] || pair, color: _LOSS_PALETTE[i % _LOSS_PALETTE.length]
     }}));
 
     const lossLabels = LOSS_WEEKS.map(w => {{
@@ -507,7 +515,7 @@ for ACCOUNT in targets:
     // ── 損失グラフ チェックボックス動的生成 ───────────────
     const lossCbContainer = document.getElementById('loss-checkboxes');
     LOSS_COLORS.forEach(c => {{
-      const label = c.pair.split('-')[2] || c.pair;
+      const label = c.label;
       const id = 'lossCb_' + c.pair.replace(/[^a-zA-Z0-9]/g,'_');
       const el = document.createElement('label');
       el.style.cssText = 'display:inline-flex;align-items:center;gap:4px;margin-right:12px;cursor:pointer';
@@ -532,7 +540,7 @@ for ACCOUNT in targets:
       }});
 
       const datasets = activeColors.map(c => {{
-        const label = c.pair.split('-')[2] || c.pair;
+        const label = c.label;
         if (isLine) {{
           return {{
             label,
